@@ -103,12 +103,14 @@ const Home = () => {
           </SwiperSlide>
         </Swiper>
       </section>
-      <section className="py-[60px] md:py-[80px] gap-[30px] flex justify-between items-center bg-black ">
+      <section className="py-[60px] md:py-[80px] gap-[30px] flex flex-col md:flex-row justify-between items-center bg-black ">
         <div className="flex justify-center items-center w-full md:w-[50%]">
           <img src="/asset/cancerRibbon.png" alt="Cancer" />
         </div>
         <div className=" w-full md:w-[50%] text-white">
-          <h2 className="text-[46px] font-semibold mb-3">Cancer Is Killing Our Loved Ones!</h2>
+          <h2 className="text-[46px] font-semibold mb-3">
+            Cancer Is Killing Our Loved Ones!
+          </h2>
 
           <ul className="flex flex-col gap-3">
             <li>
@@ -159,6 +161,46 @@ const Home = () => {
             <li></li>
           </ul>
         </div>
+      </section>
+      <section className="py-[50px] md:py-[70px] lg:py-[100px] px-[16px]">
+        <h2 className="text-[20px] md:text-[34px] font-bold text-center text-[#3c4050] w-[80%] mx-auto">
+          Everyday, we hear about tragic stories of a child, a father, a mother
+          or a great leader lost to cancer.
+        </h2>
+      </section>
+      <section className="py-[50px] bg-gray-100 px-3">
+        <div className="flex flex-col md:flex-row  mt-[30px] md:mt-[60px] ">
+          <div className="w-full md:w-[50%] h-full px-[16px] md:px-[22px] lg:px-[30px] py-[60px] bg-white">
+            <h2 className="text-[#eb0733] text-[22px] md:text-[42px] lg:text-[56px] font-bold mb-[18px] md:mb-[24px] lg:mb-[30px]">
+              The Challenge
+            </h2>
+            <p className="text-[16px] md:text-[18px] lg:text-[20px] text-[#070707]">
+              Cancer is a leading cause of death worldwide, accounting for 7.6
+              million deaths (about 13% of all deaths) , and is projected to
+              continue rising, with an estimate of 13.1 million deaths in 2030
+              (Globocan 2020). In Nigeria, about 10,000 cancer deaths are
+              recorded annually while 250,000 new cases are recorded yearly ( G
+              lobocan 2020). The report of World Health Organization (WHO)
+              reflects the alarming shortage of functional cancer control plans
+              in sub Saharan countries despite the enormity of socioeconomic
+              havocs it poses to the countries.
+            </p>
+          </div>
+          <div className="w-full md:w-[50%] hidden md:block">
+            <img
+              src="./asset/bloodbag.jpg"
+              alt=""
+              className="h-full object-cover"
+            />
+          </div>
+        </div>
+      </section>
+      <section className="px-[16px] py-[50px]">
+        <p>How We Are Fighting Cancer</p>
+        <p>
+          We are building a world-class oncology and research center in Nigeria
+          for Africa
+        </p>
       </section>
     </div>
   );
