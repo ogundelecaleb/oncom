@@ -2,8 +2,16 @@ import React from "react";
 import Navbar from "./component/Navbar";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import { Autoplay, Pagination, Navigation } from "swiper/modules";
+import "swiper/css/effect-fade";
+import { EffectFade, Autoplay, Pagination, Navigation } from "swiper/modules";
 import { SocialIcon } from "react-social-icons";
+import {
+  IoIosCheckboxOutline,
+  IoMdCheckmarkCircleOutline,
+} from "react-icons/io";
+import {FaNetworkWired,FaHeartbeat,FaChartLine,} from "react-icons/fa"
+import {PiNotepadBold} from "react-icons/pi"
+import {BiSolidBuildingHouse} from "react-icons/bi"
 
 const Home = () => {
   return (
@@ -59,11 +67,12 @@ const Home = () => {
             delay: 2500,
             disableOnInteraction: false,
           }}
+          effect={"fade"}
           pagination={{
             clickable: true,
           }}
           navigation={true}
-          modules={[Autoplay, Pagination, Navigation]}
+          modules={[EffectFade, Autoplay, Pagination, Navigation]}
           className="mySwiper w-full h-full"
         >
           <SwiperSlide>
@@ -163,7 +172,7 @@ const Home = () => {
         </div>
       </section>
       <section className="py-[50px] md:py-[70px] lg:py-[100px] px-[16px]">
-        <h2 className="text-[20px] md:text-[34px] font-bold text-center text-[#3c4050] w-[80%] mx-auto">
+        <h2 className="text-[20px] md:text-[34px] font-bold text-center text-[#3c4050] w-[90%] md:w-[80%] mx-auto">
           Everyday, we hear about tragic stories of a child, a father, a mother
           or a great leader lost to cancer.
         </h2>
@@ -171,7 +180,7 @@ const Home = () => {
       <section className="py-[50px] bg-gray-100 px-3">
         <div className="flex flex-col md:flex-row  mt-[30px] md:mt-[60px] ">
           <div className="w-full md:w-[50%] h-full px-[16px] md:px-[22px] lg:px-[30px] py-[60px] bg-white">
-            <h2 className="text-[#eb0733] text-[22px] md:text-[42px] lg:text-[56px] font-bold mb-[18px] md:mb-[24px] lg:mb-[30px]">
+            <h2 className="text-[#eb0733] text-[22px] md:text-[42px] font-bold mb-[18px] md:mb-[24px] lg:mb-[30px]">
               The Challenge
             </h2>
             <p className="text-[16px] md:text-[18px] lg:text-[20px] text-[#070707]">
@@ -195,12 +204,200 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="px-[16px] py-[50px]">
-        <p>How We Are Fighting Cancer</p>
-        <p>
+      <section className="px-[16px] py-[50px] bg-[#000435]">
+        <p className="text-[22px] md:text-[42px] lg:text-[50px] text-white font-bold text-center mb-[16px]">
+          How We Are Fighting Cancer
+        </p>
+        <p className="text-[18px] md:text-[24px] lg:text-[27px] text-gray-400  text-center">
           We are building a world-class oncology and research center in Nigeria
           for Africa
         </p>
+
+        <Swiper
+          centeredSlides={true}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          effect={"fade"}
+          pagination={{
+            clickable: true,
+          }}
+          navigation={true}
+          modules={[EffectFade, Autoplay, Pagination, Navigation]}
+          className="mySwiper max-w-[805px] rounded-lg h-full mt-[30px] md:mt-[60px]"
+        >
+          <SwiperSlide>
+            <img
+              src="https://oncomhfoundation.org/wp-content/uploads/elementor/thumbs/3B94BBCC-28E4-43B2-9148-26142B2A7A00.png-ps1milvxmw76e3izer49izqmis9i4mo1aaz9o9or52.jpg"
+              alt=""
+              className="h-full w-full object-cover"
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+              src="https://oncomhfoundation.org/wp-content/uploads/elementor/thumbs/12C54768-F144-474A-A828-2DD7B6041E81.png-ps1mik09984lqvlppqb0e07pc0irp8gkm1oapprjhi.jpg"
+              alt=""
+              className="h-full w-full object-cover"
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+              src="https://oncomhfoundation.org/wp-content/uploads/elementor/thumbs/C6953836-E403-4033-9032-F94D54ACF52F.png-ps1mii4kvk213nog0phr90os58s19u93xsdbr5ubty.jpg"
+              alt=""
+              className="h-full w-full object-cover"
+            />
+          </SwiperSlide>
+        </Swiper>
+      </section>
+      <section className="py-[30px] md:py-[50px] px-[16px] md:px-[30px] bg-slate-100">
+        <h2 className="text-[#eb0733] text-[22px] md:text-[42px]  font-bold mb-[18px] md:mb-[24px]">
+          Our Goals
+        </h2>
+        <p className="text-[18px] mb-[16px]">
+          The objectives of the project are to improve cancer control in the
+          Nigeria and sub Saharan Africa, specifically:
+        </p>
+
+        <ul className="flex flex-col gap-3">
+          <li className="flex gap-2 md:gap-3 items-center text-white px-2 py-2 md:py-3 bg-[#ff3000] rounded-md md:w-[80%] lg:w-[70%]">
+            <div>
+              <IoIosCheckboxOutline className="text-[24px]" />
+            </div>
+            <div>
+              1. To reduce cancer incidence (number of new cases of cancer)
+            </div>
+          </li>
+          <li className="flex gap-2 md:gap-3 items-center text-white px-2 py-2 md:py-3 bg-yellow-500 rounded-md md:w-[80%] lg:w-[70%]">
+            <div>
+              <IoIosCheckboxOutline className="text-[24px]" />
+            </div>
+            <div>2. To reduce mortality due to cancer</div>
+          </li>
+          <li className="flex gap-2 md:gap-3 items-center text-white px-2 py-2 md:py-3 bg-blue-500 rounded-md md:w-[80%] lg:w-[70%]">
+            <div>
+              <IoIosCheckboxOutline className="text-[24px]" />
+            </div>
+            <div>
+              3. To improve access to cancer services for the Nigeria
+              population, closer to their homes;
+            </div>
+          </li>
+          <li className="flex gap-2 md:gap-3 items-center text-white px-2 py-2 md:py-3 bg-purple-500 rounded-md md:w-[80%] lg:w-[70%]">
+            <div>
+              <IoIosCheckboxOutline className="text-[24px]" />
+            </div>
+            <div>
+              4. To improve the quality of life for patients in Nigeria and sub
+              Saharan Africa who are living with cancer.
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section className="py-[30px] md:py-[50px] px-[16px] md:px-[30px] bg-slate-100">
+        <h2 className="text-[#eb0733] text-[22px] md:text-[42px] font-bold mb-[18px] md:mb-[24px] text-center">
+          Our Objectives
+        </h2>
+
+        <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4">
+          <li className="flex flex-row md:flex-col md:items-center gap-3 bg-white rounded-lg p-2 md:py-5">
+            <div>
+              {" "}
+              <div className="h-[30px] w-[30px] md:h-[40px] md:w-[40px] flex justify-center items-center rounded-full border ">
+                <IoMdCheckmarkCircleOutline className="text-red-500 text-[24px] md:text-[28px] " />
+              </div>
+            </div>
+            <div className="md:text-center">
+              <h3 className="text-[18px] md:text-[20px] font-bold text-[#000033] mb-2 md:mb-3">
+                Diagnosis & Treatment
+              </h3>
+              <p>
+                To build and manage a top ranged oncology and Medical
+                Diagnostics and treatment facility
+              </p>
+            </div>
+          </li>
+          <li className="flex flex-row md:flex-col md:items-center gap-3 bg-white rounded-lg p-2 md:py-5">
+            <div>
+              {" "}
+              <div className="h-[30px] w-[30px] md:h-[40px] md:w-[40px] flex justify-center items-center rounded-full border ">
+                <FaChartLine className="text-red-500 text-[24px] md:text-[28px] " />
+              </div>
+            </div>
+            <div className="md:text-center">
+              <h3 className="text-[18px] md:text-[20px] font-bold text-[#000033] mb-2 md:mb-3">
+                Health Insurance
+              </h3>
+              <p>
+                To institute a transparent health insurance system for cancer
+                screening, diagnosis and treatment
+              </p>
+            </div>
+          </li>
+          <li className="flex flex-row md:flex-col md:items-center gap-3 bg-white rounded-lg p-2 md:py-5">
+            <div>
+              {" "}
+              <div className="h-[30px] w-[30px] md:h-[40px] md:w-[40px] flex justify-center items-center rounded-full border ">
+                <FaHeartbeat className="text-red-500 text-[24px] md:text-[28px] " />
+              </div>
+            </div>
+            <div className="md:text-center">
+              <h3 className="text-[18px] md:text-[20px] font-bold text-[#000033] mb-2 md:mb-3">
+                Research & Training
+              </h3>
+              <p>
+                To undertake and collaborate on cancer research and facilitate
+                the training of Oncology Medical Professionals
+              </p>
+            </div>
+          </li>
+          <li className="flex flex-row md:flex-col md:items-center gap-3 bg-white rounded-lg p-2 md:py-5">
+            <div>
+              {" "}
+              <div className="h-[30px] w-[30px] md:h-[40px] md:w-[40px] flex justify-center items-center rounded-full border ">
+                <FaNetworkWired className="text-red-500 text-[24px] md:text-[28px] " />
+              </div>
+            </div>
+            <div className="md:text-center">
+              <h3 className="text-[18px] md:text-[20px] font-bold text-[#000033] mb-2 md:mb-3">
+                Networking
+              </h3>
+              <p>To network with resourceful cancer centers across the world</p>
+            </div>
+          </li>
+          
+          <li className="flex flex-row md:flex-col md:items-center gap-3 bg-white rounded-lg p-2 md:py-5">
+            <div>
+              {" "}
+              <div className="h-[30px] w-[30px] md:h-[40px] md:w-[40px] flex justify-center items-center rounded-full border ">
+                <BiSolidBuildingHouse className="text-red-500 text-[24px] md:text-[28px] " />
+              </div>
+            </div>
+            <div className="md:text-center">
+              <h3 className="text-[18px] md:text-[20px] font-bold text-[#000033] mb-2 md:mb-3">
+                Enlightenment
+              </h3>
+              <p>To conduct enlightenment program for the societies</p>
+            </div>
+          </li>
+          <li className="flex flex-row md:flex-col md:items-center gap-3 bg-white rounded-lg p-2">
+            <div>
+              {" "}
+              <div className="h-[30px] w-[30px] md:h-[40px] md:w-[40px] flex justify-center items-center rounded-full border ">
+                <PiNotepadBold className="text-red-500 text-[24px] md:text-[28px] " />
+              </div>
+            </div>
+            <div className="md:text-center">
+              <h3 className="text-[18px] md:text-[20px] text-[#000033] mb-2 md:mb-3">
+                Government Engagement
+              </h3>
+              <p>
+                To engage the government on effective Health and Environmental
+                Policies{" "}
+              </p>
+            </div>
+          </li>
+        </ul>
       </section>
     </div>
   );
