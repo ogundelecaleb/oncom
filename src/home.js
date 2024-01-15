@@ -9,9 +9,14 @@ import {
   IoIosCheckboxOutline,
   IoMdCheckmarkCircleOutline,
 } from "react-icons/io";
-import {FaNetworkWired,FaHeartbeat,FaChartLine,} from "react-icons/fa"
-import {PiNotepadBold} from "react-icons/pi"
-import {BiSolidBuildingHouse} from "react-icons/bi"
+import {
+  FaNetworkWired,
+  FaHeartbeat,
+  FaChartLine,
+  FaStethoscope,
+} from "react-icons/fa";
+import { PiNotepadBold } from "react-icons/pi";
+import { BiSolidBuildingHouse } from "react-icons/bi";
 
 const Home = () => {
   return (
@@ -365,7 +370,7 @@ const Home = () => {
               <p>To network with resourceful cancer centers across the world</p>
             </div>
           </li>
-          
+
           <li className="flex flex-row md:flex-col md:items-center gap-3 bg-white rounded-lg p-2 md:py-5">
             <div>
               {" "}
@@ -388,7 +393,7 @@ const Home = () => {
               </div>
             </div>
             <div className="md:text-center">
-              <h3 className="text-[18px] md:text-[20px] text-[#000033] mb-2 md:mb-3">
+              <h3 className="text-[18px] md:text-[20px] font-bold text-[#000033] mb-2 md:mb-3">
                 Government Engagement
               </h3>
               <p>
@@ -398,6 +403,171 @@ const Home = () => {
             </div>
           </li>
         </ul>
+      </section>
+      <section className="py-[30px] md:py-[50px] px-[16px] md:px-[30px] bg-slate-100">
+        <h2 className="text-[#eb0733] text-[22px] md:text-[42px] font-bold mb-[18px] md:mb-[24px]">
+          We Are Making A difference
+        </h2>
+        <div className="flex flex-col md:flex-row items-center justify-center gap-5">
+          <div className="w-full md:w-[60%] lg:w-[50%]">
+            <ul>
+              <li className="flex flex-col md:flex-row justify-center items-center md:items-start p-4 md:justify-between gap-4 ">
+                <div>
+                  <FaStethoscope className="text-purple-500 text-[24px] " />
+                </div>
+                <div>
+                  <h3 className="text-[18px] md:text-[20px] font-bold text-[#000033] mb-2 md:mb-3">
+                    Our Vision
+                  </h3>
+                  <p>
+                    Our Vision is to establish a world class research-based
+                    cancer hospital and fertility center, and institute a
+                    sustainable support program to support Cancer and fertility
+                    patient in Nigeria and in Africa at large.
+                  </p>
+                </div>
+              </li>
+              <li className="flex flex-col md:flex-row justify-center items-center md:items-start p-4 md:justify-between gap-4 bg-white rounded-lg">
+                <div>
+                  <FaHeartbeat className="text-purple-500 text-[24px] " />
+                </div>
+                <div>
+                  <h3 className="text-[18px] md:text-[20px] font-bold text-[#000033] mb-2 md:mb-3">
+                    Our Mission
+                  </h3>
+                  <p>
+                    To bring cure, joy, and possibilities to the rich and the
+                    poor alike, who experience avoidable death as a result of
+                    lack of good health facilities, well trained and disciplined
+                    personnels, as well as conducive recuperating environment
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div className="flex justify-center items-center w-full md:w-[40%] lg:w-[50%]">
+            <img
+              loading="lazy"
+              src="https://oncomhfoundation.org/wp-content/uploads/2022/07/Oncologycentrehj-1024x1019.png"
+              alt="doctor"
+              className="max-h-[400px]"
+            />
+          </div>
+        </div>
+      </section>
+      <section className="relative h-[50vh] ">
+        <img
+          src="https://oncomhfoundation.org/wp-content/uploads/2022/07/2A5FB06D-5BD6-4353-8A51-FE75014A23B9.png-1.jpg"
+          loading="lazy"
+          alt=""
+          className="absolute top-0 left-0 right-0 h-full w-full object-cover -z-10"
+        />
+        <div className="h-full w-full text-center flex flex-col justify-center z-10 text-white py-[24px] bg-[#000435] opacity-80">
+          <h3 className="text-[20px] md:text-[40px] font-bold mb-5">
+            The Project
+          </h3>
+          <p className="w-[90%] md:w-[70%] mx-auto text-[18px] md:text-[20px]">
+            This project is not a profit making initiative. It is to bring joy,
+            cure and possibilities to the rich and the poor alike, who are
+            experiencing avoidable deaths as a result of lack of good health
+            facilities, (to enhance the training of) well trained and
+            disciplined personnel, (and to provide) conducive recuperating
+            environments.
+          </p>
+        </div>
+      </section>
+      <section className="py-[30px] md:py-[50px] px-[16px] md:px-[30px] bg-slate-100">
+        <div className="flex justify-center items-center">
+          <ul className="grid grid-cols-1 md:grid-cols-3 gap-7">
+            <li className="bg-white rounded-lg max-w-[340px]">
+              <div>
+                <img
+                  loading="lazy"
+                  decoding="async"
+                  className="rounded-tl-lg rounded-tr-lg h-[140px] w-full object-cover "
+                  src="https://oncomhfoundation.org/wp-content/uploads/2022/07/mri-g9bbf54628_1280.jpg"
+                  alt=""
+                />
+              </div>
+
+              <div className="py-4 text-center px-2">
+                <p>A Clinical Diagnostic and Oncology Centre</p>
+              </div>
+            </li>
+            <li className="bg-white rounded-lg max-w-[340px]">
+              <div>
+                <img
+                  loading="lazy"
+                  decoding="async"
+                  className="rounded-tl-lg rounded-tr-lg h-[140px] w-full object-cover "
+                  src="https://oncomhfoundation.org/wp-content/uploads/2022/07/C7118D40-BAAC-4B51-B023-2002189FBF21.pnggf_.jpg"
+                />
+              </div>
+
+              <div className="py-4 text-center px-2">
+                <p>A Standard ICU (Intensive Care Unit)</p>
+              </div>
+            </li>
+            <li className="bg-white rounded-lg max-w-[340px]">
+              <div>
+                <img
+                  loading="lazy"
+                  decoding="async"
+                  className="rounded-tl-lg rounded-tr-lg h-[140px] w-full object-cover "
+                  src="https://oncomhfoundation.org/wp-content/uploads/2022/07/2A5FB06D-5BD6-4353-8A51-FE75014A23B9.png-1.jpg"
+                />
+              </div>
+
+              <div className="py-4 text-center px-2">
+                <p>A Standard Operating Theater for Special Surgeries</p>
+              </div>
+            </li>
+            <li className="bg-white rounded-lg max-w-[340px]">
+              <div>
+                <img
+                  loading="lazy"
+                  decoding="async"
+                  className="rounded-tl-lg rounded-tr-lg h-[140px] w-full object-cover "
+                  src="https://oncomhfoundation.org/wp-content/uploads/2022/07/9B65F09B-0133-48BD-BE64-C0516B1577A3.png.jpg"
+                />
+              </div>
+
+              <div className="py-4 text-center px-2">
+                <p>A Recuperation Ward</p>
+              </div>
+            </li>
+            <li className="bg-white rounded-lg max-w-[340px]">
+              <div>
+                <img
+                  loading="lazy"
+                  decoding="async"
+                  className="rounded-tl-lg rounded-tr-lg h-[140px] w-full object-cover "
+                  src="https://oncomhfoundation.org/wp-content/uploads/2022/07/3A9E7F1C-113B-4882-ADDA-44A0C5EED808.png.jpg"
+                  alt=""
+                />
+              </div>
+
+              <div className="py-4 text-center px-2">
+                <p>A Fertility Clinic</p>
+              </div>
+            </li>
+            <li className="bg-white rounded-lg max-w-[340px]">
+              <div>
+                <img
+                  loading="lazy"
+                  decoding="async"
+                  className="rounded-tl-lg rounded-tr-lg h-[140px] w-full object-cover "
+src="https://oncomhfoundation.org/wp-content/uploads/2022/07/3D20AD18-6D5E-46AA-BB72-B71957E0501E.png-1.jpg"                  alt=""
+                />
+              </div>
+
+              <div className="py-4 text-center px-2">
+                <p>Research & Development Centre</p>
+              </div>
+            </li>
+          </ul>
+        </div>
       </section>
     </div>
   );
