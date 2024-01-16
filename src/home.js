@@ -17,6 +17,8 @@ import {
 } from "react-icons/fa";
 import { PiNotepadBold } from "react-icons/pi";
 import { BiSolidBuildingHouse } from "react-icons/bi";
+import { IoRibbonOutline } from "react-icons/io5";
+import CountUp from "react-countup";
 
 const Home = () => {
   return (
@@ -558,7 +560,8 @@ const Home = () => {
                   loading="lazy"
                   decoding="async"
                   className="rounded-tl-lg rounded-tr-lg h-[140px] w-full object-cover "
-src="https://oncomhfoundation.org/wp-content/uploads/2022/07/3D20AD18-6D5E-46AA-BB72-B71957E0501E.png-1.jpg"                  alt=""
+                  src="https://oncomhfoundation.org/wp-content/uploads/2022/07/3D20AD18-6D5E-46AA-BB72-B71957E0501E.png-1.jpg"
+                  alt=""
                 />
               </div>
 
@@ -567,6 +570,179 @@ src="https://oncomhfoundation.org/wp-content/uploads/2022/07/3D20AD18-6D5E-46AA-
               </div>
             </li>
           </ul>
+        </div>
+      </section>
+      <section className="py-[30px] md:py-[50px] px-[16px] md:px-[30px] bg-white">
+        <h2 className="text-[#eb0733] text-[22px] md:text-[42px] font-bold mb-[18px] md:mb-[24px]">
+          We Are Making A difference
+        </h2>
+        <div className="flex flex-col-reverse md:flex-row items-center gap-8 ">
+          <div className="w-full md:w-[50%] flex justify-center items-center ">
+            <img src="./asset/nurselady.jpg" />
+          </div>
+          <div className="w-full md:w-[50%]">
+            <ul className="flex flex-col gap-10">
+              <li className=" ">
+                <p className="text-[18px] md:text-[20px] josefin font-medium mb-3">
+                  BENEFIT 1
+                </p>
+                <p className="text">
+                  Addressing and mitigating the disparities of geography,
+                  access, risk factors and health services integration that
+                  adversely impact upon cancer control outcomes for citizens.
+                </p>
+              </li>
+              <li className="">
+                <p className="text-[18px] md:text-[20px] josefin font-medium mb-3">
+                  BENEFIT 2
+                </p>
+                <p>
+                  Reducing the incidence rates of cancer in the country;
+                  reducing cancer caused mortality rates; making cancer services
+                  to Nigerians and other sub Saharan Africa countries better and
+                  closer to home; and, creating a better quality of life for
+                  patients in the those who are living with cancer.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section className="py-[30px] md:py-[50px] px-[16px] md:px-[30px] bg-slate-100">
+        <h2 className="text-[#eb0733] text-[22px] md:text-[42px] font-bold mb-[18px] md:mb-[24px] text-center">
+          Work already in progress
+        </h2>
+
+        <Swiper
+          centeredSlides={true}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          // effect={"fade"}
+          pagination={{
+            clickable: true,
+          }}
+          navigation={true}
+          modules={[EffectFade, Autoplay, Pagination, Navigation]}
+          className="mySwiper w-full md:w-[70%] mx-auto h-[300px] md:h-[400px]"
+        >
+          <SwiperSlide>
+            <img
+              src="https://oncomhfoundation.org/wp-content/uploads/2023/08/IMG-20230801-WA0010-1024x768.jpg"
+              alt=""
+              className=" w-full object-cover"
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+              src="https://oncomhfoundation.org/wp-content/uploads/2023/08/IMG-20230801-WA0006-1024x768.jpg"
+              alt=""
+              className="h-full w-full object-cover"
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+              src="https://oncomhfoundation.org/wp-content/uploads/2023/08/IMG-20230801-WA0009-1024x768.jpg"
+              alt=""
+              className="h-full w-full object-cover"
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+              src="https://oncomhfoundation.org/wp-content/uploads/2023/08/IMG-20230801-WA0011-1024x768.jpg"
+              alt=""
+              className="h-full w-full object-cover"
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+              src="https://oncomhfoundation.org/wp-content/uploads/2023/08/IMG-20230801-WA0008-1024x768.jpg"
+              alt=""
+              className="h-full w-full object-cover"
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+              src="https://oncomhfoundation.org/wp-content/uploads/2023/08/IMG-20230801-WA0014-1024x768.jpg"
+              alt=""
+              className="h-full w-full object-cover"
+            />
+          </SwiperSlide>
+        </Swiper>
+
+        <ul className="mt-[50px] gap-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+          <li className="text-center">
+            <CountUp
+              start={-10.039}
+              end={150}
+              duration={2.75}
+              enableScrollSpy={true}
+              className="text-[24px] md:text-[36px] text-[#6b8181]"
+            />
+            <IoRibbonOutline className="text-center mx-auto text-[28px]" />
+            <p className="text-[18px]">ACRES OF LAND ACQUIRED</p>
+          </li>
+          <li className="text-center">
+            <CountUp
+              start={-875.039}
+              end={10674}
+              duration={2.75}
+              enableScrollSpy={true}
+              className="text-[24px] md:text-[36px] text-[#6b8181]"
+            />
+            <IoRibbonOutline className="text-center mx-auto text-[28px]" />
+            <p className="text-[18px]">PEOPLE SENSITIZED</p>
+          </li>
+          <li className="text-center">
+            <CountUp
+              start={-875.039}
+              end={64566380}
+              duration={2.75}
+              enableScrollSpy={true}
+              className="text-[24px] md:text-[36px] text-[#6b8181]"
+            />
+            <IoRibbonOutline className="text-center mx-auto text-[28px]" />
+            <p className="text-[18px]">MILLION NAIRA RAISED</p>
+          </li>
+          <li className="text-center">
+            <CountUp
+              start={-875.039}
+              end={2178}
+              duration={2.75}
+              enableScrollSpy={true}
+              className="text-[24px] md:text-[36px] text-[#6b8181]"
+            />
+            <IoRibbonOutline className="text-center mx-auto text-[28px]" />
+            <p className="text-[18px]">PEOPLE SUPPORTED</p>
+          </li>
+        </ul>
+      </section>
+      <section className="py-[30px] md:py-[50px] px-[16px] md:px-[30px] bg-white">
+       
+        <div className="flex flex-col md:flex-row items-center mt-[50px] gap-[40px]">
+          <div className="w-full md:w-[50%]">
+          <h2 className="text-[#eb0733] text-[18px] md:text-[28px] font-bold mb-[18px] md:mb-[24px] w-full ">
+          Project Inspired through a life changing experiences of a cancer
+          survivor.
+        </h2>
+            <p>
+              The project was conceived and born out of the need to give back to
+              the society as a result of life changing experience with cancer .
+              Being a diagnosed cancer patient and haven been in and out of the
+              of the best health institutions in Europe and America , and seeing
+              how human lives are being valued by the governments of these
+              nations, the health workers, and their citizens at large, it was
+              so heart rending to know that while he had the opportunity to
+              access the best treatment abroad at a very high and later
+              subsidized costs, his late eldest brother who was trained in the
+              UK from first degree to PhD level at Lancaster University by his
+              very hard working and committed mother was diagnosed of lung
+              cancer in Nigeria two years after he was diagnosed and eventually
+              lost the battle to cancer.
+            </p>
+          </div>
+          <div className="w-full md:w-[50%] flex justify-center " ><img src="https://oncomhfoundation.org/wp-content/uploads/2022/07/Oncologycentreed-1024x925.png" alt="" className="h-[300px] md:h-[400px] "/></div>
         </div>
       </section>
     </div>
