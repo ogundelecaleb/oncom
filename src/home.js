@@ -19,6 +19,7 @@ import { PiNotepadBold } from "react-icons/pi";
 import { BiSolidBuildingHouse } from "react-icons/bi";
 import { IoRibbonOutline } from "react-icons/io5";
 import CountUp from "react-countup";
+import "swiper/css/pagination";
 
 const Home = () => {
   return (
@@ -719,13 +720,12 @@ const Home = () => {
         </ul>
       </section>
       <section className="py-[30px] md:py-[50px] px-[16px] md:px-[30px] bg-white">
-       
         <div className="flex flex-col md:flex-row items-center mt-[50px] gap-[40px]">
           <div className="w-full md:w-[50%]">
-          <h2 className="text-[#eb0733] text-[18px] md:text-[28px] font-bold mb-[18px] md:mb-[24px] w-full ">
-          Project Inspired through a life changing experiences of a cancer
-          survivor.
-        </h2>
+            <h2 className="text-[#eb0733] text-[18px] md:text-[28px] font-bold mb-[18px] md:mb-[24px] w-full ">
+              Project Inspired through a life changing experiences of a cancer
+              survivor.
+            </h2>
             <p>
               The project was conceived and born out of the need to give back to
               the society as a result of life changing experience with cancer .
@@ -742,7 +742,178 @@ const Home = () => {
               lost the battle to cancer.
             </p>
           </div>
-          <div className="w-full md:w-[50%] flex justify-center " ><img src="https://oncomhfoundation.org/wp-content/uploads/2022/07/Oncologycentreed-1024x925.png" alt="" className="h-[300px] md:h-[400px] "/></div>
+          <div className="w-full md:w-[50%] flex justify-center ">
+            <img
+              src="https://oncomhfoundation.org/wp-content/uploads/2022/07/Oncologycentreed-1024x925.png"
+              alt=""
+              className="h-[300px] md:h-[400px] "
+            />
+          </div>
+        </div>
+      </section>
+      <section className="py-[30px] md:py-[60px] px-[16px] md:px-[30px] bg-slate-100">
+        <h2 className="text-[#eb0733] text-[22px] md:text-[42px] font-bold mb-[18px] md:mb-[24px] text-center">
+          Our Awareness Programs
+        </h2>
+        <Swiper
+          slidesPerView={3}
+          centeredSlides={true}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          // effect={"fade"}
+          pagination={{
+            clickable: true,
+          }}
+          navigation={true}
+          modules={[EffectFade, Autoplay, Pagination, Navigation]}
+          className="mySwiper w-full md:w-[70%] mx-auto h-[200px]"
+        >
+          <SwiperSlide>
+            <img
+              src="https://oncomhfoundation.org/wp-content/uploads/2022/11/IMG_20210223_104036-150x150.jpg"
+              alt=""
+              className="h-full w-full object-cover"
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+              src="https://oncomhfoundation.org/wp-content/uploads/2022/11/IMG_20210223_114003_resized_20220721_023617762-150x150.jpg"
+              alt=""
+              className="h-full w-full object-cover"
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+              src="https://oncomhfoundation.org/wp-content/uploads/2022/11/IMG_20210223_113958_resized_20220721_023618431-150x150.jpg"
+              alt=""
+              className="h-full w-full object-cover"
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+              src="https://oncomhfoundation.org/wp-content/uploads/2022/11/IMG_20221013_132346-150x150.jpg"
+              alt=""
+              className="h-full w-full object-cover"
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+              src="https://oncomhfoundation.org/wp-content/uploads/2022/11/IMG_20221013_130927-150x150.jpg"
+              alt=""
+              className="h-full w-full object-cover"
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+              src="https://oncomhfoundation.org/wp-content/uploads/2022/11/IMG-20221020-WA0004-150x150.jpg"
+              alt=""
+              className="h-full w-full object-cover"
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+              src="https://oncomhfoundation.org/wp-content/uploads/2022/11/IMG-20221020-WA0010-150x150.jpg"
+              alt=""
+              className="h-full w-full object-cover"
+            />
+          </SwiperSlide>
+        </Swiper>
+
+        <div className="w-full flex justify-center mt-[40px]">
+            <button className="bg-orange-500 text-white text-[18px] font-medium py-2 px-3 rounded-[40px]">
+             Explore
+            </button>
+          </div>
+      </section>
+      <section className="py-[30px] md:py-[80px] px-[16px] md:px-[30px] bg-white">
+        <h2 className="text-[#eb0733] text-[22px] md:text-[42px] font-bold mb-[26px] md:mb-[40px] text-center">
+          Hear From Some of Our Team Members
+        </h2>
+
+        <div className="flex justify-center sm:justify-between gap-[16px] flex-wrap items-center">
+          <div className="max-w-[300px] rounded-lg shadow-lg">
+            <iframe
+              width="300"
+              height="240"
+              src="https://www.youtube.com/embed/qw1zBaCNocw?si=WUNkKuFas1kx7-zG"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            <div className="py-5 px-3 w-full bg-white text-center rounded-bl-lg rounded-br-lg">
+              <p className="font-bold text-[18px]">Mrs Abiola Adetoro</p>
+              <p>Executive Director</p>
+            </div>
+          </div>
+          <div className="max-w-[300px] rounded-lg shadow-lg">
+            <iframe
+              width="300"
+              height="240"
+              src="https://www.youtube.com/embed/yodBOifGD0s?si=3DEw-wx0c-o8tjBj"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            <div className="py-5 px-3 w-full bg-white text-center rounded-bl-lg rounded-br-lg">
+              <p className="font-bold text-[18px]">Mrs Yetunde Adenusi</p>
+              <p>Counselor</p>
+            </div>
+          </div>
+          <div className="max-w-[300px] rounded-lg shadow-lg">
+            <iframe
+              width="300"
+              height="240"
+              src="https://www.youtube.com/embed/gWptlrc2h6A?si=OFXcacwmPdfWPvpZ"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            <div className="py-5 px-3 w-full bg-white text-center rounded-bl-lg rounded-br-lg">
+              <p className="font-bold text-[18px]">Mr Omiwole Olutola</p>
+              <p>Researcher</p>
+            </div>
+          </div>
+          <div className="max-w-[300px] rounded-lg shadow-lg">
+            <iframe
+              width="300"
+              height="240"
+              src="https://www.youtube.com/embed/B1T-EgTQ7eU?si=7SG5I0l-X5QbZsJs"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+            <div className="py-5 px-3 w-full bg-white text-center rounded-bl-lg rounded-br-lg">
+              <p className="font-bold text-[18px]">Miss Aisha Amuludun</p>
+              <p>Program Director</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        className="bg-[url(https://oncomhfoundation.org/wp-content/uploads/2022/07/3D20AD18-6D5E-46AA-BB72-B71957E0501E.png-1.jpg)] 
+bg-no-repeat h-[70vh] bg-cover bg-fixed"
+      >
+        <div className="bg-black opacity-40 w-full h-full text-center py-[40px] md:py-[60px] text-white">
+          <p className="text-[22px] md:text-[42px] font-bold mb-[18px] md:mb-[24px]">
+            We Need Your Help!
+          </p>
+          <p className="text-[19px] md:text-[24px] font-bold mb-[18px] md:mb-[24px] md:w-[80%] lg:w-[70%] mx-auto">
+            Cancer poses a threat to the peaceful existence of humanity
+            especially people in Africa. We need your support to rescue and help
+            a lot of people battling cancers in Africa.
+          </p>
+          <div className="w-full flex justify-center">
+            <button className="bg-orange-500 text-white text-[18px] font-medium py-2 px-3 rounded-[40px]">
+              Support
+            </button>
+          </div>
         </div>
       </section>
     </div>
