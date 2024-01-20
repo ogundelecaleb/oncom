@@ -20,6 +20,7 @@ import { BiSolidBuildingHouse } from "react-icons/bi";
 import { IoRibbonOutline } from "react-icons/io5";
 import CountUp from "react-countup";
 import "swiper/css/pagination";
+import Footer from "./component/Footer";
 
 const Home = () => {
   return (
@@ -76,11 +77,11 @@ const Home = () => {
             disableOnInteraction: false,
           }}
           effect={"fade"}
-          pagination={{
-            clickable: true,
-          }}
+          // pagination={{
+          //   clickable: true,
+          // }}
           navigation={true}
-          modules={[EffectFade, Autoplay, Pagination, Navigation]}
+          modules={[EffectFade, Autoplay, Navigation]}
           className="mySwiper w-full h-full"
         >
           <SwiperSlide>
@@ -503,6 +504,7 @@ const Home = () => {
                 <img
                   loading="lazy"
                   decoding="async"
+                  alt=""
                   className="rounded-tl-lg rounded-tr-lg h-[140px] w-full object-cover "
                   src="https://oncomhfoundation.org/wp-content/uploads/2022/07/C7118D40-BAAC-4B51-B023-2002189FBF21.pnggf_.jpg"
                 />
@@ -517,6 +519,7 @@ const Home = () => {
                 <img
                   loading="lazy"
                   decoding="async"
+                   alt=""
                   className="rounded-tl-lg rounded-tr-lg h-[140px] w-full object-cover "
                   src="https://oncomhfoundation.org/wp-content/uploads/2022/07/2A5FB06D-5BD6-4353-8A51-FE75014A23B9.png-1.jpg"
                 />
@@ -531,6 +534,7 @@ const Home = () => {
                 <img
                   loading="lazy"
                   decoding="async"
+                   alt=""
                   className="rounded-tl-lg rounded-tr-lg h-[140px] w-full object-cover "
                   src="https://oncomhfoundation.org/wp-content/uploads/2022/07/9B65F09B-0133-48BD-BE64-C0516B1577A3.png.jpg"
                 />
@@ -545,9 +549,10 @@ const Home = () => {
                 <img
                   loading="lazy"
                   decoding="async"
+                   alt=""
                   className="rounded-tl-lg rounded-tr-lg h-[140px] w-full object-cover "
                   src="https://oncomhfoundation.org/wp-content/uploads/2022/07/3A9E7F1C-113B-4882-ADDA-44A0C5EED808.png.jpg"
-                  alt=""
+                  
                 />
               </div>
 
@@ -560,9 +565,10 @@ const Home = () => {
                 <img
                   loading="lazy"
                   decoding="async"
+                   alt=""
                   className="rounded-tl-lg rounded-tr-lg h-[140px] w-full object-cover "
                   src="https://oncomhfoundation.org/wp-content/uploads/2022/07/3D20AD18-6D5E-46AA-BB72-B71957E0501E.png-1.jpg"
-                  alt=""
+                
                 />
               </div>
 
@@ -579,7 +585,7 @@ const Home = () => {
         </h2>
         <div className="flex flex-col-reverse md:flex-row items-center gap-8 ">
           <div className="w-full md:w-[50%] flex justify-center items-center ">
-            <img src="./asset/nurselady.jpg" />
+            <img src="./asset/nurselady.jpg"  alt=""/>
           </div>
           <div className="w-full md:w-[50%]">
             <ul className="flex flex-col gap-10">
@@ -900,7 +906,7 @@ const Home = () => {
         className="bg-[url(https://oncomhfoundation.org/wp-content/uploads/2022/07/3D20AD18-6D5E-46AA-BB72-B71957E0501E.png-1.jpg)] 
 bg-no-repeat h-[70vh] bg-cover bg-fixed"
       >
-        <div className="bg-black opacity-40 w-full h-full text-center py-[40px] md:py-[60px] text-white">
+        <div className="bg-black opacity-70 w-full h-full text-center py-[80px] md:py-[80px] text-white">
           <p className="text-[22px] md:text-[42px] font-bold mb-[18px] md:mb-[24px]">
             We Need Your Help!
           </p>
@@ -916,6 +922,7 @@ bg-no-repeat h-[70vh] bg-cover bg-fixed"
           </div>
         </div>
       </section>
+      <Footer/>
     </div>
   );
 };

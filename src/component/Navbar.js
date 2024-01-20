@@ -43,7 +43,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className=" w-full bg-white z-60 sticky shadow  top-0">
+    <div className=" w-full bg-white z-[99999999] sticky shadow  top-0">
       <div className="flex flex-row items-center   justify-between relative px-[30px] md:px-[50px] lg:px-[60px] py-[12px]">
         <Link to="/">
           <img
