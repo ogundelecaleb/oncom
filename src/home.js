@@ -28,7 +28,7 @@ const Home = () => {
       <Navbar />
       <section className="h-[80vh]  md:h-[90vh] relative">
         <div className="absolute top-0 left-0 right-0 h-full w-full bg-black z-30 opacity-70 ">
-          <div className="relative h-full w-full  py-[150px]  lg:py-[70px]  px-[16px] md:px-[50px] lg:px-[100px]">
+          <div className="relative h-full w-full  py-[150px]  lg:py-[150px]  px-[16px] md:px-[50px] lg:px-[100px]">
             <p className="text-white text-[42px] md:text-[48px] lg:text-[64px] font-bold w-[90%]  md:w-[60%] lg:w-[60%] z-30">
               Fight The Battle Of Cancer With Us In Africa
             </p>
@@ -894,8 +894,8 @@ const Home = () => {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen
             ></iframe>
-            <div className="py-5 px-3 w-full bg-white text-center rounded-bl-lg rounded-br-lg">
-              <p className="font-bold text-[18px]">Miss Aisha Amuludun</p>
+            <div className="py-5 px-3 w-full bg-white text-center rounded-bl-lg rounded-br-lg ">
+              <p className="font-bold text-[18px] ">Miss Aisha Amuludun</p>
               <p>Program Director</p>
             </div>
           </div>
@@ -904,7 +904,7 @@ const Home = () => {
 
       <section
         className="bg-[url(https://oncomhfoundation.org/wp-content/uploads/2022/07/3D20AD18-6D5E-46AA-BB72-B71957E0501E.png-1.jpg)] 
-bg-no-repeat h-[70vh] bg-cover bg-fixed"
+bg-no-repeat h-[50vh] md:h-[60vh] bg-cover bg-fixed"
       >
         <div className="bg-black opacity-70 w-full h-full text-center py-[80px] md:py-[80px] text-white">
           <p className="text-[22px] md:text-[42px] font-bold mb-[18px] md:mb-[24px]">
@@ -922,6 +922,7 @@ bg-no-repeat h-[70vh] bg-cover bg-fixed"
           </div>
         </div>
       </section>
+      <div></div>
       <Footer/>
     </div>
   );

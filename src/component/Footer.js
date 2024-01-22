@@ -4,7 +4,7 @@ import { SocialIcon } from "react-social-icons";
 const Footer = () => {
   return (
     <div className="pt-8 md:pt-[60px] px-[16px] md:px-[40px]">
-      <div className="flex justify-between flex-wrap pb-10 border-b gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 pb-10 border-b space-x-6">
         <div className="flex flex-col">
           <h3 className="text-[18px] md:text-[20px] font-semibold mb-2">Subscribe & Social</h3>
           <input
