@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link ,useLocation} from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
@@ -10,6 +10,7 @@ const Navbar = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [productOption, setProductOption] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const location = useLocation()
 
   const handleOption = () => {
     setProductOption(!productOption);
@@ -60,38 +61,38 @@ const Navbar = () => {
                 // onMouseLeave={handleMouseLeave}
                 // onMouseEnter={toggleModal}
                 // onMouseLeave={toggleModal}
-                className="cursor-pointer hover:text-[#ff5b00]   py-3"
+                className={`cursor-pointer hover:text-[#ff5b00]  ${location.pathname === "/" ? "text-[#ff5b00]": ""}  py-3`}
               >
                 Home
               </li>
             </Link>
             <Link to="/stories">
-              <li className="cursor-pointer hover:text-[#ff5b00]   py-3">
+              <li className={`cursor-pointer hover:text-[#ff5b00]  ${location.pathname === "/stories" ? "text-[#ff5b00]": ""}  py-3`}>
                 Our Cancer Stories
               </li>
             </Link>
             <Link to="/event" target="_blank" rel="noreferrer">
-              <li className="cursor-pointer hover:text-[#ff5b00]   py-3">
+              <li className={`cursor-pointer hover:text-[#ff5b00]  ${location.pathname === "/event" ? "text-[#ff5b00]": ""}  py-3`}>
                 Events
               </li>
             </Link>
             <Link to="/donate">
-              <li className="cursor-pointer hover:text-[#ff5b00]   py-3">
+              <li className={`cursor-pointer hover:text-[#ff5b00]  ${location.pathname === "/donate" ? "text-[#ff5b00]": ""}  py-3`}>
                 Donate
               </li>
             </Link>
             <Link to="/team">
-              <li className="cursor-pointer hover:text-[#ff5b00]   py-3">
+              <li className={`cursor-pointer hover:text-[#ff5b00]  ${location.pathname === "/team" ? "text-[#ff5b00]": ""}  py-3`}>
                 The Team
               </li>
             </Link>
             <Link to="/blog">
-              <li className="cursor-pointer hover:text-[#ff5b00]   py-3">
+              <li className={`cursor-pointer hover:text-[#ff5b00]  ${location.pathname === "/blog" ? "text-[#ff5b00]": ""}  py-3`}>
                 Blog
               </li>
             </Link>
             <Link to="/support">
-              <li className="cursor-pointer hover:text-[#ff5b00]   py-3">
+              <li className={`cursor-pointer hover:text-[#ff5b00]  ${location.pathname === "/support" ? "text-[#ff5b00]": ""}  py-3`}>
                 Contact
               </li>
             </Link>
