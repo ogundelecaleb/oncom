@@ -71,7 +71,7 @@ const Navbar = () => {
                 Our Cancer Stories
               </li>
             </Link>
-            <Link to="/event" target="_blank" rel="noreferrer">
+            <Link to="/event">
               <li className={`cursor-pointer hover:text-[#ff5b00]  ${location.pathname === "/event" ? "text-[#ff5b00]": ""}  py-3`}>
                 Events
               </li>
@@ -149,7 +149,7 @@ const Navbar = () => {
                 Contact
               </li>
             </Link>
-            <Link to="http://94.229.79.27:65123/" target="_blank">
+            <Link to="/event" target="_blank">
             <li className="cursor-pointer  text-black hover:text-red-500">
                 Event
               </li>
