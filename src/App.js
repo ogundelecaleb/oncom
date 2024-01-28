@@ -6,6 +6,7 @@ import Donate from './donate';
 import Events from './events';
 import Stories from './stories';
 import Team from './team';
+import "animate.css/animate.min.css";
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       <Route path="/event" element={<Events />} />
       <Route path="/stories" element={<Stories />} />
       <Route path="/team" element={<Team />} />
+      <Route path="/support" element={<Contact />} />
     </Routes>
   </BrowserRouter>
   );

@@ -21,6 +21,7 @@ import { IoRibbonOutline } from "react-icons/io5";
 import CountUp from "react-countup";
 import "swiper/css/pagination";
 import Footer from "./component/Footer";
+import ScrollAnimation from "react-animate-on-scroll";
 
 const Home = () => {
   return (
@@ -136,7 +137,9 @@ const Home = () => {
                 <p className="">Cervical Cancer</p>
               </div>
               <div className="w-full h-3 rounded-lg bg-gray-500 relative">
-                <div className="w-[90%] h-3 rounded-lg bg-[#ff3984] absolute left-0 top-0 bottom-0" />{" "}
+                <ScrollAnimation animateIn="animate__zoomInLeft">
+                  <div className="w-[90%] h-3 rounded-lg bg-[#ff3984] absolute left-0 top-0 bottom-0" />
+                </ScrollAnimation>
                 <p className="absolute -top-[25px] right-[10%]">90%</p>
               </div>
             </li>
@@ -145,7 +148,9 @@ const Home = () => {
                 <p>Breast Cancer</p>
               </div>
               <div className="w-full h-3 rounded-lg bg-gray-500 relative">
-                <div className="w-[90%] h-3 rounded-lg bg-[#ff3984] absolute left-0 top-0 bottom-0" />{" "}
+                <ScrollAnimation animateIn="animate__zoomInLeft">
+                  <div className="w-[90%] h-3 rounded-lg bg-[#ff3984] absolute left-0 top-0 bottom-0" />{" "}
+                </ScrollAnimation>
                 <p className="absolute -top-[25px] right-[10%]">90%</p>
               </div>
             </li>
@@ -154,7 +159,9 @@ const Home = () => {
                 <p>Lung Cancer</p>
               </div>
               <div className="w-full h-3 rounded-lg bg-gray-500 relative">
-                <div className="w-[75%] h-3 rounded-lg bg-[#CC24FC] absolute left-0 top-0 bottom-0" />{" "}
+                <ScrollAnimation animateIn="animate__zoomInLeft">
+                  <div className="w-[75%] h-3 rounded-lg bg-[#CC24FC] absolute left-0 top-0 bottom-0" />{" "}
+                </ScrollAnimation>
                 <p className="absolute -top-[25px] right-[25%]">75%</p>
               </div>
             </li>
@@ -163,7 +170,9 @@ const Home = () => {
                 <p>Prostate Cancer</p>
               </div>
               <div className="w-full h-3 rounded-lg bg-gray-500 relative">
-                <div className="w-[95%] h-3 rounded-lg bg-red-500 absolute left-0 top-0 bottom-0" />{" "}
+                <ScrollAnimation animateIn="animate__zoomInLeft">
+                  <div className="w-[95%] h-3 rounded-lg bg-red-500 absolute left-0 top-0 bottom-0" />{" "}
+                </ScrollAnimation>
                 <p className="absolute -top-[25px] right-[5%]">95%</p>
               </div>
             </li>
@@ -172,7 +181,9 @@ const Home = () => {
                 <p>Lymphoma</p>
               </div>
               <div className="w-full h-3 rounded-lg bg-gray-500 relative">
-                <div className="w-[85%] h-3 rounded-lg bg-[#4285f4] absolute left-0 top-0 bottom-0" />{" "}
+                <ScrollAnimation animateIn="animate__zoomInLeft">
+                  <div className="w-[85%] h-3 rounded-lg bg-[#4285f4] absolute left-0 top-0 bottom-0" />{" "}
+                </ScrollAnimation>
                 <p className="absolute -top-[25px] right-[15%]">85%</p>
               </div>
             </li>
@@ -181,10 +192,12 @@ const Home = () => {
         </div>
       </section>
       <section className="py-[50px] md:py-[70px] lg:py-[100px] px-[16px]">
-        <h2 className="text-[20px] md:text-[34px] font-bold text-center text-[#3c4050] w-[90%] md:w-[80%] mx-auto">
-          Everyday, we hear about tragic stories of a child, a father, a mother
-          or a great leader lost to cancer.
-        </h2>
+        <ScrollAnimation animateIn="animate__fadeInUp">
+          <h2 className="text-[20px] md:text-[34px] font-bold text-center text-[#3c4050] w-[90%] md:w-[80%] mx-auto">
+            Everyday, we hear about tragic stories of a child, a father, a
+            mother or a great leader lost to cancer.
+          </h2>
+        </ScrollAnimation>
       </section>
       <section className="py-[50px] bg-gray-100 px-3">
         <div className="flex flex-col md:flex-row  mt-[30px] md:mt-[60px] ">
@@ -213,15 +226,16 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="px-[16px] py-[50px] bg-[#000435]">
+      <section className="px-[16px] py-[30px] md:py-[80px] bg-[#000435]">
         <p className="text-[22px] md:text-[42px] lg:text-[50px] text-white font-bold text-center mb-[16px]">
           How We Are Fighting Cancer
         </p>
-        <p className="text-[18px] md:text-[24px] lg:text-[27px] text-gray-400  text-center">
-          We are building a world-class oncology and research center in Nigeria
-          for Africa
-        </p>
-
+        <ScrollAnimation animateIn="animate__fadeInUp">
+          <p className="text-[18px] md:text-[24px] lg:text-[27px] text-gray-400  text-center">
+            We are building a world-class oncology and research center in
+            Nigeria for Africa
+          </p>
+        </ScrollAnimation>
         <Swiper
           centeredSlides={true}
           autoplay={{
@@ -259,7 +273,7 @@ const Home = () => {
           </SwiperSlide>
         </Swiper>
       </section>
-      <section className="py-[30px] md:py-[50px] px-[16px] md:px-[30px] bg-slate-100">
+      <section className="py-[30px] md:py-[60px] px-[16px] md:px-[30px] bg-slate-100">
         <h2 className="text-[#eb0733] text-[22px] md:text-[42px]  font-bold mb-[18px] md:mb-[24px]">
           Our Goals
         </h2>
@@ -269,50 +283,58 @@ const Home = () => {
         </p>
 
         <ul className="flex flex-col gap-3">
-          <li className="flex gap-2 md:gap-3 items-center text-white px-2 py-2 md:py-3 bg-[#ff3000] rounded-md md:w-[80%] lg:w-[70%]">
-            <div>
-              <IoIosCheckboxOutline className="text-[24px]" />
-            </div>
-            <div>
-              1. To reduce cancer incidence (number of new cases of cancer)
-            </div>
-          </li>
-          <li className="flex gap-2 md:gap-3 items-center text-white px-2 py-2 md:py-3 bg-yellow-500 rounded-md md:w-[80%] lg:w-[70%]">
-            <div>
-              <IoIosCheckboxOutline className="text-[24px]" />
-            </div>
-            <div>2. To reduce mortality due to cancer</div>
-          </li>
-          <li className="flex gap-2 md:gap-3 items-center text-white px-2 py-2 md:py-3 bg-blue-500 rounded-md md:w-[80%] lg:w-[70%]">
-            <div>
-              <IoIosCheckboxOutline className="text-[24px]" />
-            </div>
-            <div>
-              3. To improve access to cancer services for the Nigeria
-              population, closer to their homes;
-            </div>
-          </li>
-          <li className="flex gap-2 md:gap-3 items-center text-white px-2 py-2 md:py-3 bg-purple-500 rounded-md md:w-[80%] lg:w-[70%]">
-            <div>
-              <IoIosCheckboxOutline className="text-[24px]" />
-            </div>
-            <div>
-              4. To improve the quality of life for patients in Nigeria and sub
-              Saharan Africa who are living with cancer.
-            </div>
-          </li>
+          <ScrollAnimation animateIn="animate__fadeInRight">
+            <li className="flex gap-2 md:gap-3 items-center text-white px-2 py-2 md:py-3 bg-[#ff3000] rounded-md md:w-[80%] lg:w-[70%]">
+              <div>
+                <IoIosCheckboxOutline className="text-[24px]" />
+              </div>
+              <div>
+                1. To reduce cancer incidence (number of new cases of cancer)
+              </div>
+            </li>
+          </ScrollAnimation>
+          <ScrollAnimation animateIn="animate__fadeInLeft">
+            <li className="flex gap-2 md:gap-3 items-center text-white px-2 py-2 md:py-3 bg-yellow-500 rounded-md md:w-[80%] lg:w-[70%]">
+              <div>
+                <IoIosCheckboxOutline className="text-[24px]" />
+              </div>
+              <div>2. To reduce mortality due to cancer</div>
+            </li>
+          </ScrollAnimation>
+          <ScrollAnimation animateIn="animate__fadeInRight">
+            <li className="flex gap-2 md:gap-3 items-center text-white px-2 py-2 md:py-3 bg-blue-500 rounded-md md:w-[80%] lg:w-[70%]">
+              <div>
+                <IoIosCheckboxOutline className="text-[24px]" />
+              </div>
+              <div>
+                3. To improve access to cancer services for the Nigeria
+                population, closer to their homes;
+              </div>
+            </li>
+          </ScrollAnimation>
+          <ScrollAnimation animateIn="animate__fadeInLeft">
+            <li className="flex gap-2 md:gap-3 items-center text-white px-2 py-2 md:py-3 bg-purple-500 rounded-md md:w-[80%] lg:w-[70%]">
+              <div>
+                <IoIosCheckboxOutline className="text-[24px]" />
+              </div>
+              <div>
+                4. To improve the quality of life for patients in Nigeria and
+                sub Saharan Africa who are living with cancer.
+              </div>
+            </li>
+          </ScrollAnimation>
         </ul>
       </section>
-      <section className="py-[30px] md:py-[50px] px-[16px] md:px-[30px] bg-slate-100">
+      <section className="py-[30px] md:py-[60px] px-[16px] md:px-[30px] bg-slate-100">
         <h2 className="text-[#eb0733] text-[22px] md:text-[42px] font-bold mb-[18px] md:mb-[24px] text-center">
           Our Objectives
         </h2>
 
         <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4">
-          <li className="flex flex-row md:flex-col md:items-center gap-3 bg-white rounded-lg p-2 md:py-5">
+          <li className="flex flex-row md:flex-col md:items-center hover:scale-110 ease-in-out duration-300 transition-all gap-3 bg-white rounded-lg p-2 md:py-5">
             <div>
               {" "}
-              <div className="h-[30px] w-[30px] md:h-[40px] md:w-[40px] flex justify-center items-center rounded-full border ">
+              <div className="h-[30px] w-[30px] md:h-[40px] md:w-[40px] flex justify-center items-center rounded-full">
                 <IoMdCheckmarkCircleOutline className="text-red-500 text-[24px] md:text-[28px] " />
               </div>
             </div>
@@ -326,10 +348,10 @@ const Home = () => {
               </p>
             </div>
           </li>
-          <li className="flex flex-row md:flex-col md:items-center gap-3 bg-white rounded-lg p-2 md:py-5">
+          <li className="flex flex-row md:flex-col md:items-center hover:scale-110 ease-in-out duration-300 transition-all gap-3 bg-white rounded-lg p-2 md:py-5">
             <div>
               {" "}
-              <div className="h-[30px] w-[30px] md:h-[40px] md:w-[40px] flex justify-center items-center rounded-full border ">
+              <div className="h-[30px] w-[30px] md:h-[40px] md:w-[40px] flex justify-center items-center rounded-full">
                 <FaChartLine className="text-red-500 text-[24px] md:text-[28px] " />
               </div>
             </div>
@@ -343,10 +365,10 @@ const Home = () => {
               </p>
             </div>
           </li>
-          <li className="flex flex-row md:flex-col md:items-center gap-3 bg-white rounded-lg p-2 md:py-5">
+          <li className="flex flex-row md:flex-col md:items-center gap-3 hover:scale-110 ease-in-out duration-300 transition-all bg-white rounded-lg p-2 md:py-5">
             <div>
               {" "}
-              <div className="h-[30px] w-[30px] md:h-[40px] md:w-[40px] flex justify-center items-center rounded-full border ">
+              <div className="h-[30px] w-[30px] md:h-[40px] md:w-[40px] flex justify-center items-center rounded-full ">
                 <FaHeartbeat className="text-red-500 text-[24px] md:text-[28px] " />
               </div>
             </div>
@@ -360,10 +382,10 @@ const Home = () => {
               </p>
             </div>
           </li>
-          <li className="flex flex-row md:flex-col md:items-center gap-3 bg-white rounded-lg p-2 md:py-5">
+          <li className="flex flex-row md:flex-col hover:scale-110 ease-in-out duration-300 transition-all md:items-center gap-3 bg-white rounded-lg p-2 md:py-5">
             <div>
               {" "}
-              <div className="h-[30px] w-[30px] md:h-[40px] md:w-[40px] flex justify-center items-center rounded-full border ">
+              <div className="h-[30px] w-[30px] md:h-[40px] md:w-[40px] flex justify-center items-center rounded-full ">
                 <FaNetworkWired className="text-red-500 text-[24px] md:text-[28px] " />
               </div>
             </div>
@@ -375,10 +397,10 @@ const Home = () => {
             </div>
           </li>
 
-          <li className="flex flex-row md:flex-col md:items-center gap-3 bg-white rounded-lg p-2 md:py-5">
+          <li className="flex flex-row md:flex-col md:items-center hover:scale-110 ease-in-out duration-300 transition-all gap-3 bg-white rounded-lg p-2 md:py-5">
             <div>
               {" "}
-              <div className="h-[30px] w-[30px] md:h-[40px] md:w-[40px] flex justify-center items-center rounded-full border ">
+              <div className="h-[30px] w-[30px] md:h-[40px] md:w-[40px] flex justify-center items-center rounded-full ">
                 <BiSolidBuildingHouse className="text-red-500 text-[24px] md:text-[28px] " />
               </div>
             </div>
@@ -389,10 +411,10 @@ const Home = () => {
               <p>To conduct enlightenment program for the societies</p>
             </div>
           </li>
-          <li className="flex flex-row md:flex-col md:items-center gap-3 bg-white rounded-lg p-2">
+          <li className="flex flex-row md:flex-col md:items-center hover:scale-110 ease-in-out duration-300 transition-all gap-3 bg-white rounded-lg p-2">
             <div>
               {" "}
-              <div className="h-[30px] w-[30px] md:h-[40px] md:w-[40px] flex justify-center items-center rounded-full border ">
+              <div className="h-[30px] w-[30px] md:h-[40px] md:w-[40px] flex justify-center items-center rounded-full">
                 <PiNotepadBold className="text-red-500 text-[24px] md:text-[28px] " />
               </div>
             </div>
@@ -408,7 +430,7 @@ const Home = () => {
           </li>
         </ul>
       </section>
-      <section className="py-[30px] md:py-[50px] px-[16px] md:px-[30px] bg-slate-100">
+      <section className="py-[30px] md:py-[60px] px-[16px] md:px-[30px] bg-slate-100">
         <h2 className="text-[#eb0733] text-[22px] md:text-[42px] font-bold mb-[18px] md:mb-[24px]">
           We Are Making A difference
         </h2>
@@ -481,7 +503,7 @@ const Home = () => {
           </p>
         </div>
       </section>
-      <section className="py-[30px] md:py-[50px] px-[16px] md:px-[30px] bg-slate-100">
+      <section className="py-[30px] md:py-[80px] px-[16px] md:px-[30px] bg-slate-100">
         <div className="flex justify-center items-center">
           <ul className="grid grid-cols-1 md:grid-cols-3 gap-7">
             <li className="bg-white rounded-lg max-w-[340px]">
@@ -519,7 +541,7 @@ const Home = () => {
                 <img
                   loading="lazy"
                   decoding="async"
-                   alt=""
+                  alt=""
                   className="rounded-tl-lg rounded-tr-lg h-[140px] w-full object-cover "
                   src="https://oncomhfoundation.org/wp-content/uploads/2022/07/2A5FB06D-5BD6-4353-8A51-FE75014A23B9.png-1.jpg"
                 />
@@ -534,7 +556,7 @@ const Home = () => {
                 <img
                   loading="lazy"
                   decoding="async"
-                   alt=""
+                  alt=""
                   className="rounded-tl-lg rounded-tr-lg h-[140px] w-full object-cover "
                   src="https://oncomhfoundation.org/wp-content/uploads/2022/07/9B65F09B-0133-48BD-BE64-C0516B1577A3.png.jpg"
                 />
@@ -549,10 +571,9 @@ const Home = () => {
                 <img
                   loading="lazy"
                   decoding="async"
-                   alt=""
+                  alt=""
                   className="rounded-tl-lg rounded-tr-lg h-[140px] w-full object-cover "
                   src="https://oncomhfoundation.org/wp-content/uploads/2022/07/3A9E7F1C-113B-4882-ADDA-44A0C5EED808.png.jpg"
-                  
                 />
               </div>
 
@@ -565,10 +586,9 @@ const Home = () => {
                 <img
                   loading="lazy"
                   decoding="async"
-                   alt=""
+                  alt=""
                   className="rounded-tl-lg rounded-tr-lg h-[140px] w-full object-cover "
                   src="https://oncomhfoundation.org/wp-content/uploads/2022/07/3D20AD18-6D5E-46AA-BB72-B71957E0501E.png-1.jpg"
-                
                 />
               </div>
 
@@ -579,13 +599,13 @@ const Home = () => {
           </ul>
         </div>
       </section>
-      <section className="py-[30px] md:py-[50px] px-[16px] md:px-[30px] bg-white">
+      <section className="py-[30px] md:py-[80px] px-[16px] md:px-[30px] bg-white">
         <h2 className="text-[#eb0733] text-[22px] md:text-[42px] font-bold mb-[18px] md:mb-[24px]">
           We Are Making A difference
         </h2>
         <div className="flex flex-col-reverse md:flex-row items-center gap-8 ">
           <div className="w-full md:w-[50%] flex justify-center items-center ">
-            <img src="./asset/nurselady.jpg"  alt=""/>
+            <img src="./asset/nurselady.jpg" alt="" />
           </div>
           <div className="w-full md:w-[50%]">
             <ul className="flex flex-col gap-10">
@@ -828,10 +848,10 @@ const Home = () => {
         </Swiper>
 
         <div className="w-full flex justify-center mt-[40px]">
-            <button className="bg-orange-500 text-white text-[18px] font-medium py-2 px-3 rounded-[40px]">
-             Explore
-            </button>
-          </div>
+          <button className="bg-orange-500 text-white text-[18px] font-medium py-2 px-3 rounded-[40px]">
+            Explore
+          </button>
+        </div>
       </section>
       <section className="py-[30px] md:py-[80px] px-[16px] md:px-[30px] bg-white">
         <h2 className="text-[#eb0733] text-[22px] md:text-[42px] font-bold mb-[26px] md:mb-[40px] text-center">
@@ -910,11 +930,14 @@ bg-no-repeat h-[50vh] md:h-[60vh] bg-cover bg-fixed"
           <p className="text-[22px] md:text-[42px] font-bold mb-[18px] md:mb-[24px]">
             We Need Your Help!
           </p>
+          <ScrollAnimation animateIn="animate__fadeInUp">
+
           <p className="text-[19px] md:text-[24px] font-bold mb-[18px] md:mb-[24px] md:w-[80%] lg:w-[70%] mx-auto">
             Cancer poses a threat to the peaceful existence of humanity
             especially people in Africa. We need your support to rescue and help
             a lot of people battling cancers in Africa.
           </p>
+          </ScrollAnimation>
           <div className="w-full flex justify-center">
             <button className="bg-orange-500 text-white text-[18px] font-medium py-2 px-3 rounded-[40px]">
               Support
@@ -923,7 +946,7 @@ bg-no-repeat h-[50vh] md:h-[60vh] bg-cover bg-fixed"
         </div>
       </section>
       <div></div>
-      <Footer/>
+      <Footer />
     </div>
   );
 };

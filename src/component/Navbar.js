@@ -2,19 +2,14 @@ import React, { useState, useEffect } from "react";
 import { Link ,useLocation} from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
-import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(true);
   const [showMenu, setShowMenu] = useState(false);
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const [productOption, setProductOption] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const location = useLocation()
 
-  const handleOption = () => {
-    setProductOption(!productOption);
-  };
+
 
   useEffect(() => {});
   const handleModalOpen = () => {
@@ -24,10 +19,7 @@ const Navbar = () => {
     setIsModalOpen(false);
   };
 
-  const handleMouseEnter = () => {
-    setIsDropdownOpen(!isDropdownOpen);
-    console.log("mouse enter");
-  };
+ 
 
   // const handleMouseLeave = () => {
   //   setIsDropdownOpen(false);
@@ -39,9 +31,7 @@ const Navbar = () => {
     setShowMenu(!showMenu);
   };
 
-  const toggleModal = () => {
-    setIsModalOpen(!isModalOpen);
-  };
+ 
 
   return (
     <div className=" w-full bg-white z-[99999999] sticky shadow  top-0">
@@ -149,11 +139,11 @@ const Navbar = () => {
                 Contact
               </li>
             </Link>
-            <Link to="/event" target="_blank">
+            {/* <Link to="/event" target="_blank">
             <li className="cursor-pointer  text-black hover:text-red-500">
                 Event
               </li>
-            </Link>
+            </Link> */}
            
           </ul>
           <button className=" py-[8px] px-[24px] bg-red-500 mt-4 text-white font-bold rounded-md">
