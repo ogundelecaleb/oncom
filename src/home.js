@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "./component/Navbar";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Link } from "react-router-dom";
 import "swiper/css";
 import "swiper/css/effect-fade";
 import { EffectFade, Autoplay, Pagination, Navigation } from "swiper/modules";
@@ -848,9 +849,10 @@ const Home = () => {
         </Swiper>
 
         <div className="w-full flex justify-center mt-[40px]">
+          <Link to="/event">
           <button className="bg-orange-500 text-white text-[18px] font-medium py-2 px-3 rounded-[40px]">
             Explore
-          </button>
+          </button></Link>
         </div>
       </section>
       <section className="py-[30px] md:py-[80px] px-[16px] md:px-[30px] bg-white">
@@ -939,9 +941,10 @@ bg-no-repeat h-[50vh] md:h-[60vh] bg-cover bg-fixed"
           </p>
           </ScrollAnimation>
           <div className="w-full flex justify-center">
+            <Link to="/support">
             <button className="bg-orange-500 text-white text-[18px] font-medium py-2 px-3 rounded-[40px]">
               Support
-            </button>
+            </button></Link>
           </div>
         </div>
       </section>

@@ -45,49 +45,56 @@ const Events = () => {
         >
           <SwiperSlide>
             <img
-              src="https://oncomhfoundation.org/wp-content/uploads/2022/11/IMG_20210223_104036-150x150.jpg"
+              src="https://oncomhfoundation.org/wp-content/uploads/elementor/thumbs/IMG_20210223_113953_resized_20220721_023619088-scaled-pyalzka8msmydkd0ogpqm3f67djqr17kafm4c2xjmo.jpg"
               alt=""
               className="h-full w-full object-cover"
             />
           </SwiperSlide>
           <SwiperSlide>
             <img
-              src="https://oncomhfoundation.org/wp-content/uploads/2022/11/IMG_20210223_114003_resized_20220721_023617762-150x150.jpg"
+              src="https://oncomhfoundation.org/wp-content/uploads/elementor/thumbs/IMG_20210223_113949_resized_20220721_023619733-scaled-pyalz1hgu3x7xd4bq8l7885ybo4eh34xjukeqjpf34.jpg"
               alt=""
               className="h-full w-full object-cover"
             />
           </SwiperSlide>
           <SwiperSlide>
             <img
-              src="https://oncomhfoundation.org/wp-content/uploads/2022/11/IMG_20210223_113958_resized_20220721_023618431-150x150.jpg"
+              src="https://oncomhfoundation.org/wp-content/uploads/elementor/thumbs/IMG_20210223_113937_resized_20220721_023620395-scaled-pyalyiop1f7hh5vms0gnucwqfyp2752at9ip50hajk.jpg"
               alt=""
               className="h-full w-full object-cover"
             />
           </SwiperSlide>
           <SwiperSlide>
             <img
-              src="https://oncomhfoundation.org/wp-content/uploads/2022/11/IMG_20221013_132346-150x150.jpg"
+              src="https://oncomhfoundation.org/wp-content/uploads/elementor/thumbs/IMG_20210223_115548_resized_20220721_023616993-scaled-pyam4ivkpbffnh5lplwurucr2l3hdiwkazkdinkqsg.jpg"
               alt=""
               className="h-full w-full object-cover"
             />
           </SwiperSlide>
           <SwiperSlide>
             <img
-              src="https://oncomhfoundation.org/wp-content/uploads/2022/11/IMG_20221013_130927-150x150.jpg"
+              src="https://oncomhfoundation.org/wp-content/uploads/elementor/thumbs/IMG_20210223_115534_resized_20220721_023616287-scaled-pyam3fecq9xe3uqy44uiv4be4ei2e8ju5k5zd17a1s.jpg"
               alt=""
               className="h-full w-full object-cover"
             />
           </SwiperSlide>
           <SwiperSlide>
             <img
-              src="https://oncomhfoundation.org/wp-content/uploads/2022/11/IMG-20221020-WA0004-150x150.jpg"
+              src="https://oncomhfoundation.org/wp-content/uploads/elementor/thumbs/IMG_20210223_114003_resized_20220721_023615525-scaled-pyam0sgnk0bfj8kuiht7da9u4hhzst2y4i9xw341i8.jpg"
               alt=""
               className="h-full w-full object-cover"
             />
           </SwiperSlide>
           <SwiperSlide>
             <img
-              src="https://oncomhfoundation.org/wp-content/uploads/2022/11/IMG-20221020-WA0010-150x150.jpg"
+              src="https://oncomhfoundation.org/wp-content/uploads/elementor/thumbs/IMG_20210223_113958_resized_20220721_023618431-scaled-pyam040umbdz5dkch78wkgfuogug8odxd5bbew4a00.jpg"
+              alt=""
+              className="h-full w-full object-cover"
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+              src="https://oncomhfoundation.org/wp-content/uploads/elementor/thumbs/IMG_20210223_104036-scaled-pyalt9r4vq0unji2f8snf6l31ika7z893ae3oe9fa8.jpg"
               alt=""
               className="h-full w-full object-cover"
             />
@@ -129,49 +136,70 @@ const Events = () => {
         >
           <SwiperSlide>
             <img
-              src="https://oncomhfoundation.org/wp-content/uploads/2022/11/IMG_20210223_104036-150x150.jpg"
+              src="https://oncomhfoundation.org/wp-content/uploads/elementor/thumbs/IMG_20221013_131043-pyaks9ttvhdjo38rgr2as0oxaix68vclo5z2nb4a74.jpg"
               alt=""
               className="h-full w-full object-cover"
             />
           </SwiperSlide>
           <SwiperSlide>
             <img
-              src="https://oncomhfoundation.org/wp-content/uploads/2022/11/IMG_20210223_114003_resized_20220721_023617762-150x150.jpg"
+              src="https://oncomhfoundation.org/wp-content/uploads/elementor/thumbs/IMG_20221013_131113-scaled-pyakup8tj2p7ntpsaaulpwmsjcyb4pzn06n8a1io4g.jpg"
               alt=""
               className="h-full w-full object-cover"
             />
           </SwiperSlide>
           <SwiperSlide>
             <img
-              src="https://oncomhfoundation.org/wp-content/uploads/2022/11/IMG_20210223_113958_resized_20220721_023618431-150x150.jpg"
+              src="https://oncomhfoundation.org/wp-content/uploads/elementor/thumbs/IMG_20221013_131118-scaled-pyakvn30d3zj9scmsph67o3dx8bittpz4u4pk04hwg.jpg"
               alt=""
               className="h-full w-full object-cover"
             />
           </SwiperSlide>
           <SwiperSlide>
             <img
-              src="https://oncomhfoundation.org/wp-content/uploads/2022/11/IMG_20221013_132346-150x150.jpg"
+              src="https://oncomhfoundation.org/wp-content/uploads/elementor/thumbs/IMG_20221013_133426-pyal0nk0taul6x2hivhjiejvz7lzvpmftndxp4owps.jpg"
               alt=""
               className="h-full w-full object-cover"
             />
           </SwiperSlide>
           <SwiperSlide>
             <img
-              src="https://oncomhfoundation.org/wp-content/uploads/2022/11/IMG_20221013_130927-150x150.jpg"
+              src="https://oncomhfoundation.org/wp-content/uploads/elementor/thumbs/IMG_20221013_131107-scaled-pyakspt33nzf5gljvfyygenre2qevq41ed2bt0gl9c.jpg"
               alt=""
               className="h-full w-full object-cover"
             />
           </SwiperSlide>
           <SwiperSlide>
             <img
-              src="https://oncomhfoundation.org/wp-content/uploads/2022/11/IMG-20221020-WA0004-150x150.jpg"
+              src="https://oncomhfoundation.org/wp-content/uploads/elementor/thumbs/IMG_20221013_131123-scaled-pyakxlkwloo1gji8d1y6woayh4o1v4huej24jr7yxs.jpg"
               alt=""
               className="h-full w-full object-cover"
             />
           </SwiperSlide>
           <SwiperSlide>
             <img
-              src="https://oncomhfoundation.org/wp-content/uploads/2022/11/IMG-20221020-WA0010-150x150.jpg"
+              src="https://oncomhfoundation.org/wp-content/uploads/elementor/thumbs/IMG_20221013_131123-scaled-pyakxlkwloo1gji8d1y6woayh4o1v4huej24jr7yxs.jpg"
+              alt=""
+              className="h-full w-full object-cover"
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+              src="https://oncomhfoundation.org/wp-content/uploads/elementor/thumbs/IMG_20221013_130927-scaled-pyakp43cwj1un9tywvwfwbe5ewhrdht2wj1bktsx40.jpg"
+              alt=""
+              className="h-full w-full object-cover"
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+              src="https://oncomhfoundation.org/wp-content/uploads/elementor/thumbs/IMG_20221013_132346-scaled-pyakyxioa8hnwnkll4o5xu7grs3rros5l4bw0v8w4g.jpg"
+              alt=""
+              className="h-full w-full object-cover"
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+              src="https://oncomhfoundation.org/wp-content/uploads/elementor/thumbs/IMG_20221013_133422-pyal0kqi8sqq836kzc9nsx9i71zw8mb8t9fh9at38g.jpg"
               alt=""
               className="h-full w-full object-cover"
             />
@@ -207,50 +235,73 @@ const Events = () => {
         >
           <SwiperSlide>
             <img
-              src="https://oncomhfoundation.org/wp-content/uploads/2022/11/IMG_20210223_104036-150x150.jpg"
+              src="https://oncomhfoundation.org/wp-content/uploads/elementor/thumbs/IMG-20221020-WA0003-pyal0pfp6yx5u4zr7wasne2t5zcqb3twhwownom4dc.jpg"
               alt=""
               className="h-full w-full object-cover"
             />
           </SwiperSlide>
           <SwiperSlide>
             <img
-              src="https://oncomhfoundation.org/wp-content/uploads/2022/11/IMG_20210223_114003_resized_20220721_023617762-150x150.jpg"
+              src="https://oncomhfoundation.org/wp-content/uploads/elementor/thumbs/IMG-20221020-WA0006-pyal0t71yb2b4kualxxaxd4njiu75w8tufauksgjog.jpg"
               alt=""
               className="h-full w-full object-cover"
             />
           </SwiperSlide>
           <SwiperSlide>
             <img
-              src="https://oncomhfoundation.org/wp-content/uploads/2022/11/IMG_20210223_113958_resized_20220721_023618431-150x150.jpg"
+              src="https://oncomhfoundation.org/wp-content/uploads/elementor/thumbs/IMG-20221020-WA0007-pyal0u4w553lg6sxggbxhuw44wpkdlck6jyc22f5i8.jpg"
               alt=""
               className="h-full w-full object-cover"
             />
           </SwiperSlide>
           <SwiperSlide>
             <img
-              src="https://oncomhfoundation.org/wp-content/uploads/2022/11/IMG_20221013_132346-150x150.jpg"
+              src="https://oncomhfoundation.org/wp-content/uploads/elementor/thumbs/IMG-20221020-WA0009-pyal0xw8wh8qqmnguhyfrtxyig718drhj2k9z69ktc.jpg"
               alt=""
               className="h-full w-full object-cover"
             />
           </SwiperSlide>
           <SwiperSlide>
             <img
-              src="https://oncomhfoundation.org/wp-content/uploads/2022/11/IMG_20221013_130927-150x150.jpg"
+              src="https://oncomhfoundation.org/wp-content/uploads/elementor/thumbs/IMG-20221020-WA0011-pyal11nlntdw12i08jky1szsvzoi366evl67wa404g.jpg"
               alt=""
               className="h-full w-full object-cover"
             />
           </SwiperSlide>
           <SwiperSlide>
             <img
-              src="https://oncomhfoundation.org/wp-content/uploads/2022/11/IMG-20221020-WA0004-150x150.jpg"
+              src="https://oncomhfoundation.org/wp-content/uploads/elementor/thumbs/IMG-20221020-WA0012-pyal12lfunf6cogn31zkmar9hdjvava57ptpdk2ly8.jpg"
               alt=""
               className="h-full w-full object-cover"
             />
           </SwiperSlide>
           <SwiperSlide>
             <img
-              src="https://oncomhfoundation.org/wp-content/uploads/2022/11/IMG-20221020-WA0010-150x150.jpg"
-              alt=""
+              src="https://oncomhfoundation.org/wp-content/uploads/elementor/thumbs/IMG-20221020-WA0008-pyal0w0kit663eq75h56muf1bogaszk0ut9b0mcd5s.jpg"
+              className="h-full w-full object-cover"
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+              src="https://oncomhfoundation.org/wp-content/uploads/elementor/thumbs/IMG-20221020-WA0004-pyal0rbdkmzqhcx0wx41sdlqcr3gqi1d65zvm8jc0w.jpg"
+              className="h-full w-full object-cover"
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+              src="https://oncomhfoundation.org/wp-content/uploads/elementor/thumbs/IMG-20221020-WA0005-pyal0s97rh10syvnrfiocvd6y4yty753iand3ihxuo.jpg"
+              className="h-full w-full object-cover"
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+              src="https://oncomhfoundation.org/wp-content/uploads/elementor/thumbs/IMG-20221020-WA0013-pyal14h48bhqzwdws2straa6o5alq9hlvz4oc3ztls.jpg"
+              className="h-full w-full object-cover"
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+              src="https://oncomhfoundation.org/wp-content/uploads/elementor/thumbs/IMG-20221020-WA0010-pyal0zrxa5bbdukqjirowtgvp7xrnryy7bv8xq6sgw.jpg"
               className="h-full w-full object-cover"
             />
           </SwiperSlide>

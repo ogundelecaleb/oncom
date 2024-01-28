@@ -38,7 +38,7 @@ const Navbar = () => {
       <div className="flex flex-row items-center   justify-between relative px-[30px] md:px-[50px] lg:px-[60px] py-[12px]">
         <Link to="/">
           <img
-            src="./asset/oncomLogo.jpg"
+            src="https://oncomhfoundation.org/wp-content/uploads/2022/07/cropped-IMG-20220722-WA0001-104x69.jpg"
             alt=""
             className="lg:h-[45px] h-[38px] mr-5"
           />
@@ -76,11 +76,11 @@ const Navbar = () => {
                 The Team
               </li>
             </Link>
-            <Link to="/blog">
+            {/* <Link to="/blog">
               <li className={`cursor-pointer hover:text-[#ff5b00]  ${location.pathname === "/blog" ? "text-[#ff5b00]": ""}  py-3`}>
                 Blog
               </li>
-            </Link>
+            </Link> */}
             <Link to="/support">
               <li className={`cursor-pointer hover:text-[#ff5b00]  ${location.pathname === "/support" ? "text-[#ff5b00]": ""}  py-3`}>
                 Contact
@@ -129,11 +129,11 @@ const Navbar = () => {
                 The Team
               </li>
             </Link>
-            <Link to="/blog">
+            {/* <Link to="/blog">
             <li className="cursor-pointer  text-black hover:text-red-500">
               Blog
               </li>
-            </Link>
+            </Link> */}
             <Link to="/contact">
             <li className="cursor-pointer  text-black hover:text-red-500">
                 Contact
