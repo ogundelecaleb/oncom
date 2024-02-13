@@ -23,6 +23,8 @@ import CountUp from "react-countup";
 import "swiper/css/pagination";
 import Footer from "./component/Footer";
 import ScrollAnimation from "react-animate-on-scroll";
+import Blog from "./component/blogs";
+
 
 const Home = () => {
   return (
@@ -944,11 +946,13 @@ bg-no-repeat h-[50vh] md:h-[60vh] bg-cover bg-fixed"
             <Link to="/support">
             <button className="bg-orange-500 text-white text-[18px] font-medium py-2 px-3 rounded-[40px]">
               Support
-            </button></Link>
+            </button>
+            </Link>
           </div>
         </div>
       </section>
       <div></div>
+      <Blog />
       <Footer />
     </div>
   );

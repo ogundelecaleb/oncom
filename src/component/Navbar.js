@@ -12,12 +12,7 @@ const Navbar = () => {
 
 
   useEffect(() => {});
-  const handleModalOpen = () => {
-    setIsModalOpen(true);
-  };
-  const handleModalClose = () => {
-    setIsModalOpen(false);
-  };
+
 
  
 
@@ -76,11 +71,11 @@ const Navbar = () => {
                 The Team
               </li>
             </Link>
-            {/* <Link to="/blog">
-              <li className={`cursor-pointer hover:text-[#ff5b00]  ${location.pathname === "/blog" ? "text-[#ff5b00]": ""}  py-3`}>
+            <Link to="/allblog">
+              <li className={`cursor-pointer hover:text-[#ff5b00]  ${location.pathname === "/allblog" ? "text-[#ff5b00]": ""}  py-3`}>
                 Blog
               </li>
-            </Link> */}
+            </Link>
             <Link to="/support">
               <li className={`cursor-pointer hover:text-[#ff5b00]  ${location.pathname === "/support" ? "text-[#ff5b00]": ""}  py-3`}>
                 Contact
@@ -129,11 +124,11 @@ const Navbar = () => {
                 The Team
               </li>
             </Link>
-            {/* <Link to="/blog">
+            <Link to="/allblog">
             <li className="cursor-pointer  text-black hover:text-red-500">
               Blog
               </li>
-            </Link> */}
+            </Link>
             <Link to="/contact">
             <li className="cursor-pointer  text-black hover:text-red-500">
                 Contact
@@ -158,31 +153,7 @@ const Navbar = () => {
         </div>
       )}
 
-      {isModalOpen && (
-        <div
-          onMouseEnter={handleModalOpen}
-          onMouseLeave={handleModalClose}
-          className={`bg-gray-100 absolute left-[30%] rounded-md shadow -bottom-[120px] hidden lg:block min-w-[200px] py-5 px-9 z-20`}
-        >
-          <ul className="flex flex-col gap-3">
-            <Link to="/payment">
-              <li className="cursor-pointer border-b text-[#124072] hover:text-[#1b599b] hover:border-b hover:border-b-lg hover:border-b-[#124072]">
-                Payments
-              </li>
-            </Link>
-            <Link to="/billvending">
-              <li className="cursor-pointer border-b text-[#124072] hover:text-[#1b599b] hover:border-b hover:border-b-lg hover:border-b-[#124072]">
-                Bill Vending
-              </li>
-            </Link>
-            <Link to="/paymentlink">
-              <li className="cursor-pointer border-b text-[#124072] hover:text-[#1b599b] hover:border-b hover:border-b-lg hover:border-b-[#124072]">
-                Payment Link
-              </li>
-            </Link>
-          </ul>
-        </div>
-      )}
+      
     </div>
   );
 };
