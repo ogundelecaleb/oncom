@@ -38,7 +38,7 @@ const AllBlogs = () => {
     // Simulate a 5-second delay
     const loadingTimeout = setTimeout(() => {
       setIsLoading(false);
-    }, 6000);
+    }, 1000);
 
     return () => {
       clearTimeout(loadingTimeout);
@@ -54,7 +54,7 @@ const AllBlogs = () => {
             Blogs
           </h2>
           <p className="text-center text-[#2E2E2E] text-[16px] md:text-[18px]">
-            Latest insights, stories, and news from OA Initiative.{" "}
+            Latest insights, stories, and news from Oncology Medical Foundation.{" "}
           </p>
           {/* <img
             src="/man-exclaim.png"

@@ -5,9 +5,10 @@ import imageUrlFor from "./imageUrlFor";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { Link } from "react-router-dom";
+import { PortableText } from "@portabletext/react";
 
 const Blog = () => {
-  const BlockContent = require('@sanity/block-content-to-react')
+  const BlockContent = require("@sanity/block-content-to-react");
   const [blogs, setBlogs] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
@@ -38,7 +39,7 @@ const Blog = () => {
     // Simulate a 5-second delay
     const loadingTimeout = setTimeout(() => {
       setIsLoading(false);
-    }, 5000);
+    }, 1000);
 
     return () => {
       clearTimeout(loadingTimeout);
@@ -64,11 +65,37 @@ const Blog = () => {
       items: 1,
     },
   };
+
+  const components = {
+  list: {
+    // Ex. 1: customizing common list types
+    bullet: ({children}) => <ul className="mt-xl">{children}</ul>,
+    number: ({children}) => <ol className="mt-lg">{children}</ol>,
+
+    // Ex. 2: rendering custom lists
+    checkmarks: ({children}) => <ol className="m-auto text-lg">{children}</ol>,
+  },
+   block: {
+    // Ex. 1: customizing common block types
+    h1: ({children}) => <h1 className="text-2xl">{children}</h1>,
+    blockquote: ({children}) => <blockquote className="border-l-purple-500">{children}</blockquote>,
+
+    // Ex. 2: rendering custom styles
+    customHeading: ({children}) => (
+      <h2 className="text-lg text-primary text-purple-700">{children}</h2>
+    ),
+  },
+    listItem: {
+    // Ex. 1: customizing common list types
+    bullet: ({children}) => <li style={{listStyleType: 'disclosure-closed'}}>{children}</li>,
+
+    // Ex. 2: rendering custom list items
+    checkmarks: ({children}) => <li>✅ {children}</li>,
+  },
+}
   return (
     <div className="px-[18px] md:px-[40px] lg:px-[80px] py-[24px] md:py-[42px] lg:py-[72px]  bg-gray-50 my-9">
-      <div className="w-full  flex ">
-     
-      </div>
+      <div className="w-full  flex "></div>
       <h2 className="text-center text-[22px] md:text-[28px] font-bold mt-[12px] md:mt-[36px]">
         Blog Post
       </h2>
@@ -98,8 +125,18 @@ const Blog = () => {
                     <h2 className="text-[18px] md:text-[20px] line-clamp-2 lg:text-[24px] mb-2 font-semibold">
                       {blog.title}
                     </h2>
-                    <div className = "prose line-clamp-2">
-                        <BlockContent blocks = {blog.body} projectId = "pzl9rov9" dataset = "production" />
+                    <div className="prose  line-clamp-2">
+                      <PortableText
+                        value={blog.body}
+                         components={components}
+                      />
+                      
+                      //
+                      {/* <BlockContent
+                        blocks={blog.body}
+                        projectId="pzl9rov9"
+                        dataset="production"
+                      /> */}
                     </div>
                     {/* <p className="text-md prose ">{blog.body.children.text} </p>{" "} */}
                     {/* <h3>{blog.publishedAt}</h3> */}
@@ -113,7 +150,7 @@ const Blog = () => {
               ))
             ) : (
               <div>
-                <p>Blog Loading</p>
+                <p>Blog Loading..</p>
               </div>
             )}
           </Carousel>

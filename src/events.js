@@ -12,6 +12,60 @@ const Events = () => {
       <Navbar />
       <section className="py-[40px] md:py-[60px] lg:py-[80px] px-[16px] sm:px-[20px] md:px-[40px] lg:px-[70px] text-center xl:px-[140px]">
         <h2 className="text-[24px] sm:text-[27px] md:text-[40px] lg:text-[50px]  mb-3 font-bold  ">
+        Isonyin Grammar school        </h2>
+        <p className="tracking-wider mb-5 md:mb-10 leading-7">
+        The foundation was at Isonyin Grammar school, Isonyin via Ijebu Ode, today 12th of October 2023 for a cancer awareness programme. We had 45 teachers in attendance. The topic was BONE TUMOR and our resource person was Dr Adekunle Adebanjo of Ola Olu specialist hospital.F
+        </p>
+        <Swiper
+          slidesPerView={3}
+          centeredSlides={true}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          // effect={"fade"}
+          pagination={{
+            clickable: true,
+          }}
+          navigation={true}
+          modules={[EffectFade, Autoplay, Pagination, Navigation]}
+          className="mySwiper w-full md:w-[70%] mx-auto h-[200px]"
+        >
+          <SwiperSlide>
+            <img
+src="./asset/imgae1.jpg"              alt=""
+              className="h-full w-full object-cover"
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+src="./asset/imgae2.jpg"                alt=""
+              className="h-full w-full object-cover"
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+src="./asset/imgae3.jpg"                alt=""
+              className="h-full w-full object-cover"
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+src="./asset/imgae4.jpg"                alt=""
+              className="h-full w-full object-cover"
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img
+src="./asset/imgae5.jpg"                alt=""
+              className="h-full w-full object-cover"
+            />
+          </SwiperSlide>
+         
+        </Swiper>
+      </section>
+      <section className="py-[40px] md:py-[60px] lg:py-[80px] px-[16px] sm:px-[20px] md:px-[40px] lg:px-[70px] text-center xl:px-[140px]">
+        <h2 className="text-[24px] sm:text-[27px] md:text-[40px] lg:text-[50px]  mb-3 font-bold  ">
           Academic Staff Union of Secondary School Teachers
         </h2>
         <p className="tracking-wider mb-5 md:mb-10 leading-7">

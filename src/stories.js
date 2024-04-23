@@ -44,19 +44,24 @@ bg-no-repeat h-[50vh] md:h-[90vh] bg-cover bg-fixed"
             <p className="mb-3">Reasons she contacted the foundation: money</p>
             <p>
               What she had done earlier: visited a facility where they place her
-              on wrong drugs and false hope. The role the foundation played: the
-              foundation attempted to advise her to use a suitable oncology
-              facility, but the patient was referred to a private center due to
-              delay and inaccessibility of the public facility they visited. The
-              foundation then had to just support with funds, monitoring,
-              professional networking and advise. Reports: the patient was
-              billed for biopsy sampling, but the doctors realized that the case
-              was an emergency, and then advised them for prompt mastectomy
-              procedure. Mastectomy was done and the patient started the
-              prescribed courses of chemotherapy. Outcome: the patient took the
-              first chemotherapy, and on the 2nd chemotherapy visit, metastasis
-              to the lung was confirmed by an X-ray, and the patient couldn’t
-              make it. She died!
+              on wrong drugs and false hope.
+              <br />
+              <br />
+              The role the foundation played: the foundation attempted to advise
+              her to use a suitable oncology facility, but the patient was
+              referred to a private center due to delay and inaccessibility of
+              the public facility they visited. The foundation then had to just
+              support with funds, monitoring, professional networking and
+              advise.
+              <br /> <br />
+              Reports: The patient was billed for biopsy sampling, but the
+              doctors realized that the case was an emergency, and then advised
+              them for prompt mastectomy procedure. Mastectomy was done and the
+              patient started the prescribed courses of chemotherapy.
+              <br /> <br />
+              Outcome: The patient took the first chemotherapy, and on the 2nd
+              chemotherapy visit, metastasis to the lung was confirmed by an
+              X-ray, and the patient couldn’t make it. She died!
             </p>
             <p className="mb-3">
               Our Observations: The patient's outcome was constrained by
@@ -68,8 +73,8 @@ bg-no-repeat h-[50vh] md:h-[90vh] bg-cover bg-fixed"
               <li>• Inaccessible oncology</li>
               <li>• Ignorance</li>
               <li>
-                • Inappropriately trained oncology professionals, especially for
-                chemo administration.
+                • Oncologist: Inappropriately trained oncology professionals,
+                especially for chemo administration.
               </li>
             </ul>
             <p className="mb-2">
@@ -84,9 +89,8 @@ bg-no-repeat h-[50vh] md:h-[90vh] bg-cover bg-fixed"
                 because it was bought in the open market.
               </li>
               <li>
-                Her blood work-up and or results viz-a-viz therapeutic drug
-                monitoring could not be ascertained before the next course of
-                chemo administration.
+                Her blood results and therapeutic drug monitoring could not be
+                ascertained before the next course of chemo administration.
               </li>
             </ol>
 
@@ -100,11 +104,11 @@ bg-no-repeat h-[50vh] md:h-[90vh] bg-cover bg-fixed"
           <div className="text-[#3c4050] mt-8 md:mt-10">
             <p className="mb-3">Case 2:</p>
 
-            <p className="mt-3">Occupation; Civil servant</p>
-            <p className="mb-3">Case: a sort of eye cancer</p>
+            <p className="mt-3 mb-2">Occupation; Civil servant</p>
+            <p className="mb-3">Case: Eye cancer</p>
             <p className="mb-3">
               History:
-              <br />
+              <br /> {"\n"}
               She first noticed that her eyes were itching, then she visited an
               hospital where they first told her she had a sort of eye cancer.
               She was advised to agree for surgical treatment which would
@@ -118,7 +122,9 @@ bg-no-repeat h-[50vh] md:h-[90vh] bg-cover bg-fixed"
               her decision. She was scheduled for pre-surgery treatments to
               include rounds of chemotherapy. She was taken through series of
               tests to include brain and neck CT scan and other requisite tests
-              which she did.
+              which she did. She was later admitted for surgery. The surgery was
+              done and the blood result revealed anemia. She was transfused. But
+              she died before she was discharged.
               <br />
               She was later admitted for surgery, surgery done, the blood
               work-up revealed anaemia. She was transfused. But she died before
@@ -152,13 +158,14 @@ bg-no-repeat h-[50vh] md:h-[90vh] bg-cover bg-fixed"
           <div className="text-[#3c4050]">
             <p className="mb-3">Case 3:</p>
             <p className="mb-3">Occupation- Secondary school teacher</p>
-            <p>
+            <p className="mb-3">
               Description: A 47yrs old divorcee with children, a high school
-              teacher Nature: Breast Cancer
+              teacher 
             </p>
-            <p>Date she detected: not certain, but seemed early</p>
-            <p>Date she contacted the foundation: November 2020</p>
-            <p className="mb-3">Reasons she contacted: for money</p>
+            <p className="mb-3">Nature: Breast Cancer</p>
+            <p className="mb-3">Date she detected: not certain, but seemed early</p>
+            <p className="mb-3">Date she contacted the foundation: November 2020</p>
+            <p className="mb-3">Reasons she contacted: Money</p>
             <p className="mb-3">
               What she had done earlier: resorted to herbs and nature. She had
               been anxious of chemotherapy and she defiled the advise for
@@ -539,13 +546,17 @@ bg-no-repeat h-[50vh] md:h-[90vh] bg-cover bg-fixed"
           </div>
           <div className="text-[#3c4050]">
             <p className="mb-3">Case 10:</p>
-            <p className="mb-3">A 14 years old girl diagnosed of cancer of the blood and still undergoing treatment at LASUTH. It started with an abdominal pain and on getting to general hospital, test where carried out and the sickness was discovered. She's still undergoing treatment.</p>
-            
+            <p className="mb-3">
+              A 14 years old girl diagnosed of cancer of the blood and still
+              undergoing treatment at LASUTH. It started with an abdominal pain
+              and on getting to general hospital, test where carried out and the
+              sickness was discovered. She's still undergoing treatment.
+            </p>
           </div>
         </div>
       </section>
 
-      <Footer/>
+      <Footer />
     </div>
   );
 };

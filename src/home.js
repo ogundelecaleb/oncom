@@ -25,7 +25,6 @@ import Footer from "./component/Footer";
 import ScrollAnimation from "react-animate-on-scroll";
 import Blog from "./component/blogs";
 
-
 const Home = () => {
   return (
     <div>
@@ -411,7 +410,7 @@ const Home = () => {
               <h3 className="text-[18px] md:text-[20px] font-bold text-[#000033] mb-2 md:mb-3">
                 Enlightenment
               </h3>
-              <p>To conduct enlightenment program for the societies</p>
+              <p>To conduct enlightenment programme for the societies</p>
             </div>
           </li>
           <li className="flex flex-row md:flex-col md:items-center hover:scale-110 ease-in-out duration-300 transition-all gap-3 bg-white rounded-lg p-2">
@@ -451,8 +450,8 @@ const Home = () => {
                   <p>
                     Our Vision is to establish a world class research-based
                     cancer hospital and fertility center, and institute a
-                    sustainable support program to support Cancer and fertility
-                    patient in Nigeria and in Africa at large.
+                    sustainable support programme to support Cancer and
+                    fertility patients in Nigeria and in Africa at large.
                   </p>
                 </div>
               </li>
@@ -627,11 +626,10 @@ const Home = () => {
                   BENEFIT 2
                 </p>
                 <p>
-                  Reducing the incidence rates of cancer in the country;
-                  reducing cancer caused mortality rates; making cancer services
-                  to Nigerians and other sub Saharan Africa countries better and
-                  closer to home; and, creating a better quality of life for
-                  patients in the those who are living with cancer.
+                  Our Vision is to establish a world class research-based cancer
+                  hospital and fertility center, and institute a sustainable
+                  support programme to support Cancer and fertility patients in
+                  Nigeria and in Africa at large.
                 </p>
               </li>
             </ul>
@@ -757,18 +755,17 @@ const Home = () => {
             </h2>
             <p>
               The project was conceived and born out of the need to give back to
-              the society as a result of life changing experience with cancer .
-              Being a diagnosed cancer patient and haven been in and out of the
-              of the best health institutions in Europe and America , and seeing
+              the society as a result of a life changing experience with cancer
+              . As a diagnosed cancer patient who has been in and out of the of
+              the best health institutions in Europe and America , and seeing
               how human lives are being valued by the governments of these
-              nations, the health workers, and their citizens at large, it was
-              so heart rending to know that while he had the opportunity to
-              access the best treatment abroad at a very high and later
-              subsidized costs, his late eldest brother who was trained in the
-              UK from first degree to PhD level at Lancaster University by his
-              very hard working and committed mother was diagnosed of lung
-              cancer in Nigeria two years after he was diagnosed and eventually
-              lost the battle to cancer.
+              nations, the health workers, and their citizens at large. It is so
+              heart rending to know that while I had the opportunity to access
+              the best treatment abroad at a very high and later subsidized
+              costs, my late elder brother who was trained in the UK from first
+              degree to PhD level at Lancaster University by his very hard
+              working and committed mother was diagnosed of lung cancer in
+              Nigeria. Two years after, he eventually lost the battle to cancer.
             </p>
           </div>
           <div className="w-full md:w-[50%] flex justify-center ">
@@ -782,7 +779,7 @@ const Home = () => {
       </section>
       <section className="py-[30px] md:py-[60px] px-[16px] md:px-[30px] bg-slate-100">
         <h2 className="text-[#eb0733] text-[22px] md:text-[42px] font-bold mb-[18px] md:mb-[24px] text-center">
-          Our Awareness Programs
+          Our Awareness Programmes
         </h2>
         <Swiper
           slidesPerView={3}
@@ -852,9 +849,10 @@ const Home = () => {
 
         <div className="w-full flex justify-center mt-[40px]">
           <Link to="/event">
-          <button className="bg-orange-500 text-white text-[18px] font-medium py-2 px-3 rounded-[40px]">
-            Explore
-          </button></Link>
+            <button className="bg-orange-500 text-white text-[18px] font-medium py-2 px-3 rounded-[40px]">
+              Explore
+            </button>
+          </Link>
         </div>
       </section>
       <section className="py-[30px] md:py-[80px] px-[16px] md:px-[30px] bg-white">
@@ -920,7 +918,7 @@ const Home = () => {
             ></iframe>
             <div className="py-5 px-3 w-full bg-white text-center rounded-bl-lg rounded-br-lg ">
               <p className="font-bold text-[18px] ">Miss Aisha Amuludun</p>
-              <p>Program Director</p>
+              <p>Programme Director</p>
             </div>
           </div>
         </div>
@@ -935,18 +933,17 @@ bg-no-repeat h-[50vh] md:h-[60vh] bg-cover bg-fixed"
             We Need Your Help!
           </p>
           <ScrollAnimation animateIn="animate__fadeInUp">
-
-          <p className="text-[19px] md:text-[24px] font-bold mb-[18px] md:mb-[24px] md:w-[80%] lg:w-[70%] mx-auto">
-            Cancer poses a threat to the peaceful existence of humanity
-            especially people in Africa. We need your support to rescue and help
-            a lot of people battling cancers in Africa.
-          </p>
+            <p className="text-[19px] md:text-[24px] font-bold mb-[18px] md:mb-[24px] md:w-[80%] lg:w-[70%] mx-auto">
+              Cancer poses a threat to the peaceful existence of humanity
+              especially people in Africa. We need your support to rescue and
+              help a lot of people battling cancers in Africa.
+            </p>
           </ScrollAnimation>
           <div className="w-full flex justify-center">
             <Link to="/support">
-            <button className="bg-orange-500 text-white text-[18px] font-medium py-2 px-3 rounded-[40px]">
-              Support
-            </button>
+              <button className="bg-orange-500 text-white text-[18px] font-medium py-2 px-3 rounded-[40px]">
+                Support
+              </button>
             </Link>
           </div>
         </div>
